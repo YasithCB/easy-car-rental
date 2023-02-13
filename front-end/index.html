@@ -7,8 +7,198 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/MDB/css/mdb.min.css">
 
+    <style>
+        html,
+        body,
+        .intro {
+            height: 100%;
+        }
+
+        @media (min-width: 550px) and (max-width: 750px) {
+            html,
+            body,
+            .intro {
+                height: 750px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            .intro {
+                height: 750px;
+            }
+        }
+
+        .mask-custom {
+            backdrop-filter: blur(15px);
+            background-color: rgba(255,255,255,.2);
+            border-radius: 3em;
+            border: 2px solid rgba(255,255,255,.1);
+            background-clip: padding-box;
+            box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+        }
+    </style>
+
 </head>
 <body>
+
+<!--login-->
+<section class="intro">
+    <div class="bg-image h-100" style="background-image: url(assets/images/login-bg.jpg);">
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+
+                <!--log-->
+                <!--<div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+                        <div class="card mask-custom">
+                            <div class="card-body p-5 text-white">
+
+                                <div class="my-4">
+
+                                    <h2 class="text-center mb-5">Login Form</h2>
+
+                                    <form>
+                                        &lt;!&ndash; username input &ndash;&gt;
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="text" id="userName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="userName">User Name</label>
+                                        </div>
+
+                                        &lt;!&ndash; Password input &ndash;&gt;
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="password" id="password" class="form-control form-control-lg" />
+                                            <label class="form-label" for="password">Password</label>
+                                        </div>
+
+                                        &lt;!&ndash; Checkbox &ndash;&gt;
+                                        <div class="form-check d-flex justify-content-center mb-4">
+                                            <input
+                                                    class="form-check-input me-2"
+                                                    type="checkbox"
+                                                    value=""
+                                                    id="form2Example3"
+                                                    checked
+                                            />
+                                            <label class="form-check-label" for="form2Example3">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                        &lt;!&ndash; Submit button &ndash;&gt;
+                                        <button type="submit" class="btn btn-light btn-block mb-4">Login</button>
+
+                                        <a href="#"><p class="text-center text-light mb-4">New user? Register Now</p></a>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--log-->
+
+                <!--reg-->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+                        <div class="card mask-custom">
+                            <div class="card-body p-5 text-white">
+
+                                <div class="my-4">
+
+                                    <h2 class="text-center mb-5">Register Form</h2>
+
+                                    <form>
+                                        <!-- username input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="text" id="userNameReg" class="form-control form-control-lg" />
+                                            <label class="form-label" for="userNameReg">User Name</label>
+                                        </div>
+
+                                        <!-- Password input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="password" id="passwordReg" class="form-control form-control-lg" />
+                                            <label class="form-label" for="passwordReg">Password</label>
+                                        </div>
+
+                                        <!-- email input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="email" id="email" class="form-control form-control-lg" />
+                                            <label class="form-label" for="email">E-mail</label>
+                                        </div>
+
+                                        <!-- contact input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="number" id="contact" class="form-control form-control-lg" />
+                                            <label class="form-label" for="contact">Contact</label>
+                                        </div>
+
+                                        <div class="row">
+                                            <!-- nic no input -->
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="form-outline form-white">
+                                                    <input type="number" id="nic" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="nic">NIC</label>
+                                                </div>
+                                            </div>
+                                            <!-- nic 4to input -->
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="form-outline form-white">
+                                                    <input type="file" id="nicImage" class="form-control form-control-lg" />
+<!--                                                    <label class="form-label" for="form3Example2">Last name</label>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- driving license no input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="number" id="drivingLicense" class="form-control form-control-lg" />
+                                            <label class="form-label" for="nic">Driving License</label>
+                                        </div>
+
+                                        <!-- driving license image input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="file" id="drivingLicenseImage" class="form-control form-control-lg" />
+<!--                                            <label class="form-label" for="drivingLicenseImage">DL Image</label>-->
+                                        </div>
+
+                                        <!-- Checkbox -->
+                                        <div class="form-check d-flex justify-content-center mb-4">
+                                            <input
+                                                    class="form-check-input me-2"
+                                                    type="checkbox"
+                                                    value=""
+                                                    id="agreeTerms"
+                                                    checked
+                                            />
+                                            <label class="form-check-label" for="agreeTerms">
+                                                I agree terms and conditions
+                                            </label>
+                                        </div>
+
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn btn-light btn-block mb-4">Register</button>
+
+                                        <a href="#"><p class="text-center text-light mb-4">Also have an account?? Login</p></a>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--reg-->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--login-->
 
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
