@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 /**
  * author  Yasith C Bandara
@@ -22,4 +22,22 @@ import javax.persistence.Id;
 public class ReservationDetails {
     @Id
     private Long id;
+
+    private LocalDate pickupDate;
+    private String pickupLocation;
+    private LocalDate finishDate;
+    private String finishLocation;
+
+    @ManyToOne
+    @JoinColumn(name = "reservationId", referencedColumnName = "id")
+    private Reservation reservation;
+
+    @ManyToOne
+    @JoinColumn(name = "carId", referencedColumnName = "id")
+    private Car car;
+
+    @ManyToOne
+    @JoinColumn(name = "driverId", referencedColumnName = "id")
+    private Driver driver;
+
 }

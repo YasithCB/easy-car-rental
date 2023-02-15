@@ -5,8 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -26,4 +29,5 @@ public class Admin {
     private String contact;
     private String email;
     private String address;
+
 }

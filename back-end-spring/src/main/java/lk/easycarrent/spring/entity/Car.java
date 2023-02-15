@@ -9,10 +9,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -41,4 +44,7 @@ public class Car {
     private Double chargeForExtraKm;
     private Double dailyRate;
     private Double monthlyRate;
+
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
+    private List<ReservationDetails> reservationDetailsList;
 }

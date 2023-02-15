@@ -6,8 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import sun.security.util.Password;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -33,4 +36,7 @@ public class User {
     private String drivingLicenseNo;
     private byte[] drivingLicenseImageFront;
     private byte[] drivingLicenseImageBack;
+
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    private List<Reservation> reservationList;
 }

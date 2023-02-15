@@ -5,8 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
@@ -25,4 +24,8 @@ public class Payment {
     private Long id;
     private LocalDate date;
     private Double value;
+
+    @ManyToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "reservationId", referencedColumnName = "id")
+    private Reservation reservation;
 }
