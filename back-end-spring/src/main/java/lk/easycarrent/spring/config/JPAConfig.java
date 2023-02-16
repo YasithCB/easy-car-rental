@@ -1,5 +1,6 @@
 package lk.easycarrent.spring.config;
 
+import lk.easycarrent.spring.repo.CarRepo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -22,13 +23,13 @@ import javax.sql.DataSource;
  */
 
 @Configuration
-@EnableJpaRepositories(basePackageClasses = {})
+@EnableJpaRepositories(basePackages = "lk.easycarrent.spring.repo")
 @EnableTransactionManagement
 public class JPAConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter jpa){
         LocalContainerEntityManagerFactoryBean bean= new LocalContainerEntityManagerFactoryBean();
-        bean.setPackagesToScan("lk.ijse.spring.entity");
+        bean.setPackagesToScan("lk.easycarrent.spring.entity");
         bean.setDataSource(ds);
         bean.setJpaVendorAdapter(jpa);
         return bean;

@@ -1,6 +1,7 @@
 package lk.easycarrent.spring.controller;
 
 import lk.easycarrent.spring.repo.UserRepo;
+import lk.easycarrent.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,10 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    private UserRepo userRepo;
+    private UserService service;
 
     @GetMapping
     public void getAllUsers(){
-        getAllUsers();
+        System.out.println("user get");
     }
 }

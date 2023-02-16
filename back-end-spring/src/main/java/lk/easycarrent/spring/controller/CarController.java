@@ -18,12 +18,18 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/car")
 public class CarController {
 
-    /*@Autowired
-    private CarRepo carRepo;
+    @Autowired
+    private CarRepo repo;
+
+    @GetMapping
+    public String getAllCars(){
+        System.out.println("get invoked");
+        return "get invoked";
+    }
 
     @PostMapping
     public ResponseUtil saveCar(@ModelAttribute CarDTO dto){
-        carRepo.save(new Car(
+        repo.save(new Car(
                 dto.getRegNo(),
                 dto.getBrand(),
                 dto.getColor(),
@@ -39,12 +45,5 @@ public class CarController {
                 dto.getMonthlyRate()
         ));
         return new ResponseUtil("200","Car Saved",null);
-    }*/
-
-    @GetMapping
-    public String getAllCars(){
-        System.out.println("get invoked");
-        return "get invoked";
     }
-
 }
