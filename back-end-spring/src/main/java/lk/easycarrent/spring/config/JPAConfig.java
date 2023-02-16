@@ -40,9 +40,9 @@ public class JPAConfig {
         //if we are in (Production) we can use a DBCP pool
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/spring_jpa?createDatabaseIfNotExist=true");
+        ds.setUrl("jdbc:mysql://localhost:3306/easy_car_rent?createDatabaseIfNotExist=true");
         ds.setUsername("root");
-        ds.setPassword("sanu1234");
+        ds.setPassword("1234");
         return ds;
     }
 
