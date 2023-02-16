@@ -1,5 +1,7 @@
 package lk.easycarrent.spring;
 
+import lk.easycarrent.spring.config.WebAppConfig;
+import lk.easycarrent.spring.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -11,16 +13,16 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{WebRootConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+        return new Class[]{WebAppConfig.class};
     }
 
     @Override
     protected String[] getServletMappings() {
-        return new String[0];
+        return new String[]{"/"};
     }
 }

@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
 import java.time.LocalDate;
 
 /**
@@ -18,9 +17,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Entity
 public class CarDTO {
-    private Long id;
     private String regNo;
     private String brand;
     private Color color;

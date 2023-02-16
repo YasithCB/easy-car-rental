@@ -1,5 +1,7 @@
 package lk.easycarrent.spring.controller;
 
+import lk.easycarrent.spring.dto.CarDTO;
+import lk.easycarrent.spring.entity.Car;
 import lk.easycarrent.spring.repo.CarRepo;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +18,33 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/car")
 public class CarController {
 
-    @Autowired
+    /*@Autowired
     private CarRepo carRepo;
 
     @PostMapping
-    public ResponseUtil saveCar(){
-        return new ResponseUtil();
+    public ResponseUtil saveCar(@ModelAttribute CarDTO dto){
+        carRepo.save(new Car(
+                dto.getRegNo(),
+                dto.getBrand(),
+                dto.getColor(),
+                dto.getImage(),
+                dto.getIsAvailable(),
+                dto.getAvailableDate(),
+                dto.getTransmissionType(),
+                dto.getFuelType(),
+                dto.getCarType(),
+                dto.getFreeMileage(),
+                dto.getChargeForExtraKm(),
+                dto.getDailyRate(),
+                dto.getMonthlyRate()
+        ));
+        return new ResponseUtil("200","Car Saved",null);
+    }*/
+
+    @GetMapping
+    public String getAllCars(){
+        System.out.println("get invoked");
+        return "get invoked";
     }
 
 }
