@@ -6,6 +6,9 @@ import lk.easycarrent.spring.repo.CarRepo;
 import lk.easycarrent.spring.service.CarService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 
 /**
  * author  Yasith C Bandara
@@ -13,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * project back-end-spring
  */
 
+@Service
+@Transactional
 public class CarServiceImpl implements CarService {
 
     @Autowired
