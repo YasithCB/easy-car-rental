@@ -63,8 +63,8 @@
 <!-- Navbar -->
 
 <!--car cards-->
-<section class="container">
-    <section class="row gap-3 justify-content-center">
+<section id="carCardsSection" class="container">
+    <section class="row gap-3 justify-content-center my-3">
 
         <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
@@ -178,7 +178,7 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-danger btn-block m-5">Add a new Car</button>
+        <button id="btnAddNewCar" type="button" class="btn btn-danger btn-block m-5">Add a new Car</button>
 
     </section>
 </section>
@@ -186,8 +186,8 @@
 
 
 <!--edit car form-->
-<form class="container">
-    <h3 class="text-center text-white my-5 py-5">Edit Car Details</h3>
+<form id="editCarForm" class="container">
+    <h3 class="text-center text-white my-5 py-3">Add a new Car</h3>
 
     <!--image-->
     <div class="bg-image hover-overlay ripple my-5">
@@ -222,6 +222,10 @@
         <option value="5">Blue</option>
         <option value="6">Gray</option>
     </select>
+
+    <div class="form-outline my-4">
+        <input type="file" id="carImages" class="form-control text-white" />
+    </div>
 
     <div class="form-check form-switch my-4">
         <input class="form-check-input" type="checkbox" role="switch" id="isAvailable" checked>
@@ -280,7 +284,7 @@
 
 
     <!-- Submit button -->
-    <button type="submit" class="btn btn-danger btn-block mb-4">Add Car</button>
+    <button id="addCar" type="button" class="btn btn-danger btn-block mb-4">Add Car</button>
 
 
 </form>
@@ -374,5 +378,61 @@
 
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../assets/MDB/js/mdb.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    let baseURL = "http://localhost:8080/easy_car_rent/"
+
+    $("#editCarForm").css('display','none');
+
+    $("#btnAddNewCar").click(function (){
+        $("#editCarForm").css('display','block');
+        $("#carCardsSection").css('display','none');
+    });
+
+    $("#addCar").click(function () {
+
+        var formData = $("#editCarForm").serialize();
+        // will generate a query String including form data
+
+        //send ajax request to the car servlet
+        $.ajax({
+            url: baseURL+"car",
+            method: "post",
+            data: formData,
+            dataType:"json",
+            success: function (res) {
+                alert(res.message);
+                loadAllCars();
+            },
+            error:function(error){
+                var jsObject=JSON.parse(error.responseText);
+                alert(jsObject.message);
+            }
+        });
+    });
+
+    //Load all cars
+    function loadAllCars(){
+        $("#tblCustomer").empty();
+        $.ajax({
+            url: baseURL+"customer",
+            dataType: "json",
+            success: function (resp) {
+                console.log(resp);
+                for (let cus of resp.data) {
+                    var row = '<tr><td>' + cus.id + '</td><td>' + cus.name + '</td><td>' + cus.address + '</td><td>' + cus.salary + '</td></tr>';
+                    $("#tblCustomer").append(row);
+                }
+                bindRowClickEvents();
+                setTextFieldValues("","","","");
+                $("#txtCustomerID").focus();
+            }
+        });
+
+    }
+
+
+</script>
 </body>
 </html>

@@ -2,206 +2,387 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Dashboard</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/MDB/css/mdb.min.css">
 
     <style>
-        html,
-        body,
-        .intro {
-            height: 100%;
-        }
 
-        @media (min-width: 550px) and (max-width: 750px) {
-            html,
-            body,
-            .intro {
-                height: 750px;
-            }
-        }
-
-        @media (min-width: 800px) and (max-width: 850px) {
-            html,
-            body,
-            .intro {
-                height: 750px;
-            }
-        }
-
-        .mask-custom {
-            backdrop-filter: blur(15px);
-            background-color: rgba(255,255,255,.2);
-            border-radius: 3em;
-            border: 2px solid rgba(255,255,255,.1);
-            background-clip: padding-box;
-            box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-        }
     </style>
 
 </head>
-<body>
+<body class="bg-dark">
 
-<!--login-->
-<section class="intro">
-    <div class="bg-image h-100" style="background-image: url(assets/images/login-bg.jpg);">
-        <div class="mask d-flex align-items-center h-100">
-            <div class="container">
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
 
-                <!--log-->
-                <!--<div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
-                        <div class="card mask-custom">
-                            <div class="card-body p-5 text-white">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Easy Car Rent</a>
 
-                                <div class="my-4">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
 
-                                    <h2 class="text-center mb-5">Login Form</h2>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
 
-                                    <form>
-                                        &lt;!&ndash; username input &ndash;&gt;
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="text" id="userName" class="form-control form-control-lg" />
-                                            <label class="form-label" for="userName">User Name</label>
-                                        </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cars.html">Cars</a>
+                </li>
 
-                                        &lt;!&ndash; Password input &ndash;&gt;
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="password" id="password" class="form-control form-control-lg" />
-                                            <label class="form-label" for="password">Password</label>
-                                        </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
 
-                                        &lt;!&ndash; Checkbox &ndash;&gt;
-                                        <div class="form-check d-flex justify-content-center mb-4">
-                                            <input
-                                                    class="form-check-input me-2"
-                                                    type="checkbox"
-                                                    value=""
-                                                    id="form2Example3"
-                                                    checked
-                                            />
-                                            <label class="form-check-label" for="form2Example3">
-                                                Remember me
-                                            </label>
-                                        </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
 
-                                        &lt;!&ndash; Submit button &ndash;&gt;
-                                        <button type="submit" class="btn btn-light btn-block mb-4">Login</button>
+            </ul>
 
-                                        <a href="#"><p class="text-center text-light mb-4">New user? Register Now</p></a>
+            <!-- Button open login -->
+            <button type="button" class="btn btn-outline-light">Login</button>
 
-                                    </form>
+        </div>
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
 
-                                </div>
+<!--carousal-->
+<div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-mdb-ride="carousel">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!--log-->
+    <!--indicators-->
+    <div class="carousel-indicators">
+        <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+        ></button>
+        <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+        ></button>
+        <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"
+        ></button>
+    </div>
+    <!--indicators-->
 
-                <!--reg-->
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
-                        <div class="card mask-custom">
-                            <div class="card-body p-5 text-white">
+    <!--image items-->
+    <div class="carousel-inner">
+        <div class="carousel-item active ">
+            <img src="assets/images/carousel/1.jpg" class="d-block w-100 opacity-50" alt="Wild Landscape"/>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Easy car rental</h2>
+                <h6 style="color: rgba(255,255,255,0.82)" class="mb-5">Service with 5 years of history</h6>
+                <button type="button" class="btn btn-danger btn-lg mb-2">Let's Go & Rent a Car</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/carousel/2.jpg" class="d-block w-100 opacity-50" alt="Camera"/>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Easy car rental</h2>
+                <h6 style="color: rgba(255,255,255,0.82)" class="mb-5">Service with 5 years of history</h6>
+                <button type="button" class="btn btn-danger btn-lg mb-2">Let's Go & Rent a Car</button>
 
-                                <div class="my-4">
-
-                                    <h2 class="text-center mb-5">Register Form</h2>
-
-                                    <form>
-                                        <!-- username input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="text" id="userNameReg" class="form-control form-control-lg" />
-                                            <label class="form-label" for="userNameReg">User Name</label>
-                                        </div>
-
-                                        <!-- Password input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="password" id="passwordReg" class="form-control form-control-lg" />
-                                            <label class="form-label" for="passwordReg">Password</label>
-                                        </div>
-
-                                        <!-- email input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="email" id="email" class="form-control form-control-lg" />
-                                            <label class="form-label" for="email">E-mail</label>
-                                        </div>
-
-                                        <!-- contact input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="number" id="contact" class="form-control form-control-lg" />
-                                            <label class="form-label" for="contact">Contact</label>
-                                        </div>
-
-                                        <div class="row">
-                                            <!-- nic no input -->
-                                            <div class="col-12 col-md-6 mb-4">
-                                                <div class="form-outline form-white">
-                                                    <input type="number" id="nic" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="nic">NIC</label>
-                                                </div>
-                                            </div>
-                                            <!-- nic 4to input -->
-                                            <div class="col-12 col-md-6 mb-4">
-                                                <div class="form-outline form-white">
-                                                    <input type="file" id="nicImage" class="form-control form-control-lg" />
-<!--                                                    <label class="form-label" for="form3Example2">Last name</label>-->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- driving license no input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="number" id="drivingLicense" class="form-control form-control-lg" />
-                                            <label class="form-label" for="nic">Driving License</label>
-                                        </div>
-
-                                        <!-- driving license image input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="file" id="drivingLicenseImage" class="form-control form-control-lg" />
-<!--                                            <label class="form-label" for="drivingLicenseImage">DL Image</label>-->
-                                        </div>
-
-                                        <!-- Checkbox -->
-                                        <div class="form-check d-flex justify-content-center mb-4">
-                                            <input
-                                                    class="form-check-input me-2"
-                                                    type="checkbox"
-                                                    value=""
-                                                    id="agreeTerms"
-                                                    checked
-                                            />
-                                            <label class="form-check-label" for="agreeTerms">
-                                                I agree terms and conditions
-                                            </label>
-                                        </div>
-
-                                        <!-- Submit button -->
-                                        <button type="submit" class="btn btn-light btn-block mb-4">Register</button>
-
-                                        <a href="#"><p class="text-center text-light mb-4">Also have an account?? Login</p></a>
-
-                                    </form>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--reg-->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/carousel/3.jpg" class="d-block w-100 opacity-50" alt="Exotic Fruits"/>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Easy car rental</h2>
+                <h6 style="color: rgba(255,255,255,0.82)" class="mb-5">Service with 5 years of history</h6>
+                <button type="button" class="btn btn-danger btn-lg mb-2">Let's Go & Rent a Car</button>
 
             </div>
         </div>
     </div>
+    <!--image items-->
+
+    <!--controllers-->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade"
+            data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCrossfade"
+            data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    <!--controllers-->
+
+</div>
+<!--carousal-->
+
+<!--search a available car form-->
+<form id="searchCarForm" class="container my-5 pt-5">
+
+    <h3 class="text-center text-white my-5 pb-2">Search a Available Car</h3>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+        <div class="col">
+            <label class="form-label text-white">Pickup Date & Time</label>
+            <div class="form-outline">
+                <input type="datetime-local" id="form3Example1" class="form-control text-white"/>
+            </div>
+        </div>
+        <div class="col">
+            <label class="form-label text-white">Filter by Price</label>
+            <div class="form-outline">
+                <input type="text" id="form3Example2" class="form-control text-white"/>
+                <label class="form-label text-white" for="form3Example2">Below LKR</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-danger btn-block mb-5">Search a Car</button>
+
+</form>
+<!--search a available car form-->
+
+<!--car cards-->
+<section class="container">
+    <h3 class="text-center text-white my-5 py-5">Here are! Choose One</h3>
+
+    <section class="row gap-3 justify-content-center">
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+        <div class="card col-3 text-light" style="background-color: rgba(0,0,0,0.71)">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/login-bg.jpg" class="img-fluid mt-2"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Freedom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#!" class="btn btn-dark">Show More</a>
+            </div>
+        </div>
+
+
+    </section>
 </section>
-<!--login-->
+<!--car cards-->
+
+
+<!-- Footer -->
+<footer style="background-color: rgba(0,0,0,0.65)" class="text-center text-white mt-5 pt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+        </section>
+        <!-- Section: Social media -->
+
+
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our news</strong>
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <!-- Email input -->
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example2" class="form-control"/>
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-auto">
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-danger mb-4">
+                            Sign
+                        </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                aliquam sequi voluptate quas.
+            </p>
+        </section>
+        <!-- Section: Text -->
+
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(0,0,0)">
+        © 2023 Copyright Easy Car Rent pvt(Ltd)
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/MDB/js/mdb.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 </body>
 </html>
