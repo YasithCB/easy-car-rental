@@ -23,9 +23,8 @@ public class CarController {
     private CarService service;
 
     @GetMapping
-    public String getAllCars(){
-        System.out.println("get invoked");
-        return "get invoked";
+    public ResponseUtil getAllCars(){
+        return new ResponseUtil("200","",service.getAllCars());
     }
 
     @PostMapping
