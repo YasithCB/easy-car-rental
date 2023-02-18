@@ -39,4 +39,10 @@ public class CarController {
         service.deleteCar(id);
         return new ResponseUtil("200", id+" car deleted",null);
     }
+
+    @PutMapping
+    public ResponseUtil updateCar(@RequestBody CarDTO dto){
+        service.updateCar(dto);
+        return new ResponseUtil("200","car details updated",dto);
+    }
 }

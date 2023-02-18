@@ -35,4 +35,9 @@ public class CarServiceImpl implements CarService {
     public void deleteCar(Long id) {
         repo.deleteById(id);
     }
+
+    @Override
+    public void updateCar(CarDTO dto) {
+        repo.save(mapper.map(dto,Car.class));
+    }
 }

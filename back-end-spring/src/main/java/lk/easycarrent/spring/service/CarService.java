@@ -12,4 +12,6 @@ public interface CarService {
     void saveCar(CarDTO dto);
 
     void deleteCar(Long id);
+
+    void updateCar(CarDTO dto);
 }
