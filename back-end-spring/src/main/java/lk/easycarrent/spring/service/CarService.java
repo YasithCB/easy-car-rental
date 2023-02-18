@@ -10,4 +10,6 @@ import lk.easycarrent.spring.dto.CarDTO;
 
 public interface CarService {
     void saveCar(CarDTO dto);
+
+    void deleteCar(Long id);
 }

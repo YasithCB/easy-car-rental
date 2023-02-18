@@ -3,6 +3,7 @@ package lk.easycarrent.spring.controller;
 import lk.easycarrent.spring.dto.CarDTO;
 import lk.easycarrent.spring.entity.Car;
 import lk.easycarrent.spring.repo.CarRepo;
+import lk.easycarrent.spring.service.CarService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 public class CarController {
 
     @Autowired
-    private CarRepo repo;
+    private CarService service;
 
     @GetMapping
     public String getAllCars(){
@@ -29,21 +30,13 @@ public class CarController {
 
     @PostMapping
     public ResponseUtil saveCar(@ModelAttribute CarDTO dto){
-        repo.save(new Car(
-                dto.getRegNo(),
-                dto.getBrand(),
-                dto.getColor(),
-                dto.getImage(),
-                dto.getIsAvailable(),
-                dto.getAvailableDate(),
-                dto.getTransmissionType(),
-                dto.getFuelType(),
-                dto.getCarType(),
-                dto.getFreeMileage(),
-                dto.getChargeForExtraKm(),
-                dto.getDailyRate(),
-                dto.getMonthlyRate()
-        ));
-        return new ResponseUtil("200","Car Saved",null);
+        service.saveCar(dto);
+        return new ResponseUtil("200","Car Saved",dto);
+    }
+
+    @DeleteMapping(params = "id")
+    public ResponseUtil deleteCar(Long id){
+        service.deleteCar(id);
+        return new ResponseUtil("200", id+" car deleted",null);
     }
 }
