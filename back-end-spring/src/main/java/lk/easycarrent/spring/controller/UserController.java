@@ -2,6 +2,7 @@ package lk.easycarrent.spring.controller;
 
 import lk.easycarrent.spring.repo.UserRepo;
 import lk.easycarrent.spring.service.UserService;
+import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +24,7 @@ public class UserController {
     private UserService service;
 
     @GetMapping
-    public void getAllUsers(){
-        System.out.println("user get");
+    public ResponseUtil getAllUsers(){
+        return new ResponseUtil("200","",service.getAllUsers());
     }
 }

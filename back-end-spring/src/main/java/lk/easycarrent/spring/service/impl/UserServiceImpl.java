@@ -5,10 +5,12 @@ import lk.easycarrent.spring.entity.User;
 import lk.easycarrent.spring.repo.UserRepo;
 import lk.easycarrent.spring.service.UserService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 
 /**
  * author  Yasith C Bandara
@@ -21,13 +23,18 @@ import javax.transaction.Transactional;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    UserRepo userRepo;
+    private UserRepo repo;
 
     @Autowired
-    ModelMapper modelMapper;
+    private ModelMapper mapper;
 
     @Override
     public void saveUser(UserDTO dto) {
-        userRepo.save(modelMapper.map(dto,User.class));
+        repo.save(mapper.map(dto,User.class));
+    }
+
+    @Override
+    public ArrayList<UserDTO> getAllUsers() {
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<UserDTO>>(){}.getType());
     }
 }
