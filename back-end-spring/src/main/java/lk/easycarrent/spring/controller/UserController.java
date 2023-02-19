@@ -38,4 +38,9 @@ public class UserController {
         return new ResponseUtil("200","user "+id+" deleted", id);
     }
 
+    @PutMapping
+    public ResponseUtil updateUser(@RequestBody UserDTO dto){
+        service.updateUser(dto);
+        return new ResponseUtil("200", "user "+dto.getUserName()+"'s details updated", dto);
+    }
 }

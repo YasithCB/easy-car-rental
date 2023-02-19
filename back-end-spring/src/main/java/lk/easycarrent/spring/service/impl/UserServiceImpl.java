@@ -42,4 +42,9 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(String id) {
         repo.deleteById(Long.valueOf(id));
     }
+
+    @Override
+    public void updateUser(UserDTO dto) {
+        repo.save(mapper.map(dto, User.class));
+    }
 }
