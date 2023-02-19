@@ -37,4 +37,9 @@ public class DriverServiceImpl implements DriverService {
     public ArrayList<DriverDTO> getAllDrivers() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<DriverDTO>>(){}.getType());
     }
+
+    @Override
+    public void deleteCustomer(String id) {
+        repo.deleteById(Long.parseLong(id));
+    }
 }
