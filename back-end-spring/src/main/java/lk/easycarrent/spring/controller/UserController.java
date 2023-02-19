@@ -1,13 +1,11 @@
 package lk.easycarrent.spring.controller;
 
+import lk.easycarrent.spring.dto.UserDTO;
 import lk.easycarrent.spring.repo.UserRepo;
 import lk.easycarrent.spring.service.UserService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * author  Yasith C Bandara
@@ -26,5 +24,11 @@ public class UserController {
     @GetMapping
     public ResponseUtil getAllUsers(){
         return new ResponseUtil("200","",service.getAllUsers());
+    }
+
+    @PostMapping
+    public ResponseUtil saveUser(UserDTO dto){
+        service.saveUser(dto);
+        return new ResponseUtil("200","User "+dto.getUserName()+" saved", dto);
     }
 }
