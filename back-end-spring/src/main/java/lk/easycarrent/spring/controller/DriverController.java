@@ -1,8 +1,9 @@
 package lk.easycarrent.spring.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lk.easycarrent.spring.service.DriverService;
+import lk.easycarrent.spring.util.ResponseUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * author  Yasith C Bandara
@@ -14,6 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RequestMapping("driver")
 public class DriverController {
+
+    @Autowired
+    private DriverService service;
+
+    @GetMapping
+    public ResponseUtil getAllDrivers(){
+        return new ResponseUtil("200","", service.getAllDrivers());
+    }
+
 
 
 }
