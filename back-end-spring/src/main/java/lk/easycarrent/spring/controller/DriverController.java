@@ -1,5 +1,6 @@
 package lk.easycarrent.spring.controller;
 
+import lk.easycarrent.spring.dto.DriverDTO;
 import lk.easycarrent.spring.service.DriverService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,10 @@ public class DriverController {
         return new ResponseUtil("200","", service.getAllDrivers());
     }
 
-
+    @PostMapping
+    public ResponseUtil saveDriver(DriverDTO dto){
+        service.saveDriver(dto);
+        return new ResponseUtil("200", "driver "+dto.getName()+" saved", dto);
+    }
 
 }
