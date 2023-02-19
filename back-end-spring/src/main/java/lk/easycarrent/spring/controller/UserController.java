@@ -31,4 +31,11 @@ public class UserController {
         service.saveUser(dto);
         return new ResponseUtil("200","User "+dto.getUserName()+" saved", dto);
     }
+
+    @DeleteMapping(params = "id")
+    public ResponseUtil deleteUser(String id){
+        service.deleteUser(id);
+        return new ResponseUtil("200","user "+id+" deleted", id);
+    }
+
 }

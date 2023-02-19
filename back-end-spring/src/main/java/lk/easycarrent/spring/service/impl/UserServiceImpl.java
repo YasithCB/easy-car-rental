@@ -37,4 +37,9 @@ public class UserServiceImpl implements UserService {
     public ArrayList<UserDTO> getAllUsers() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<UserDTO>>(){}.getType());
     }
+
+    @Override
+    public void deleteUser(String id) {
+        repo.deleteById(Long.valueOf(id));
+    }
 }
