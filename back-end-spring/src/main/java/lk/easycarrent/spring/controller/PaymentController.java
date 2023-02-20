@@ -19,5 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("payment")
 public class PaymentController {
 
+    @Autowired
+    private PaymentService service;
 
+    @GetMapping
+    public ResponseUtil getAllPayments(){
+        return new ResponseUtil("200","", service.getAllPayments());
+    }
 }

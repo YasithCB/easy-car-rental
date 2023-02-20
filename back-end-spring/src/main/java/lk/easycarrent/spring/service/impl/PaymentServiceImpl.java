@@ -1,6 +1,13 @@
 package lk.easycarrent.spring.service.impl;
 
+import lk.easycarrent.spring.dto.PaymentDTO;
+import lk.easycarrent.spring.repo.PaymentRepo;
 import lk.easycarrent.spring.service.PaymentService;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
 
 /**
  * author  Yasith C Bandara
@@ -9,4 +16,15 @@ import lk.easycarrent.spring.service.PaymentService;
  */
 
 public class PaymentServiceImpl implements PaymentService {
+
+    @Autowired
+    private PaymentRepo repo;
+
+    @Autowired
+    private ModelMapper mapper;
+
+    @Override
+    public ArrayList<PaymentDTO> getAllPayments() {
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<PaymentDTO>>(){}.getType());
+    }
 }

@@ -1,7 +1,9 @@
 package lk.easycarrent.spring.service;
 
+import lk.easycarrent.spring.dto.PaymentDTO;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 
 /**
  * author  Yasith C Bandara
@@ -12,4 +14,5 @@ import javax.transaction.Transactional;
 @Service
 @Transactional
 public interface PaymentService {
+    ArrayList<PaymentDTO> getAllPayments();
 }
