@@ -36,4 +36,10 @@ public class PaymentController {
         service.deletePayment(id);
         return new ResponseUtil("200","payment "+id+" deleted",id);
     }
+
+    @PutMapping
+    public ResponseUtil updatePayment(@RequestBody PaymentDTO dto){
+        service.updatePayment(dto);
+        return new ResponseUtil("200", "payment "+ dto.getId()+"'s details updated",dto);
+    }
 }

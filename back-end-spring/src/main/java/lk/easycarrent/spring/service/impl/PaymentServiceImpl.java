@@ -38,4 +38,9 @@ public class PaymentServiceImpl implements PaymentService {
     public void deletePayment(String id) {
         repo.deleteById(Long.valueOf(id));
     }
+
+    @Override
+    public void updatePayment(PaymentDTO dto) {
+        repo.save(mapper.map(dto, Payment.class));
+    }
 }

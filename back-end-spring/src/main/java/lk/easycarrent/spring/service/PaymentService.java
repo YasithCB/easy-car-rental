@@ -19,4 +19,6 @@ public interface PaymentService {
     void savePayment(PaymentDTO dto);
 
     void deletePayment(String id);
+
+    void updatePayment(PaymentDTO dto);
 }
