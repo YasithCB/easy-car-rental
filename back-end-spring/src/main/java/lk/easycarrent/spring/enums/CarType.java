@@ -1,4 +1,4 @@
-package lk.easycarrent.spring.dto;
+package lk.easycarrent.spring.enums;
 
 /**
  * author  Yasith C Bandara

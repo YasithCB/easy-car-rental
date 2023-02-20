@@ -1,5 +1,9 @@
 package lk.easycarrent.spring.dto;
 
+import lk.easycarrent.spring.enums.CarType;
+import lk.easycarrent.spring.enums.Color;
+import lk.easycarrent.spring.enums.FuelType;
+import lk.easycarrent.spring.enums.TransmissionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

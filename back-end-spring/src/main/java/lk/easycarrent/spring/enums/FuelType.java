@@ -1,4 +1,4 @@
-package lk.easycarrent.spring.dto;
+package lk.easycarrent.spring.enums;
 
 /**
  * author  Yasith C Bandara
@@ -6,7 +6,7 @@ package lk.easycarrent.spring.dto;
  * project back-end-spring
  */
 
-public enum TransmissionType {
-    AUTO,
-    MANUAL
+public enum FuelType {
+    PETROL,
+    DIESEL
 }

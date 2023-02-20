@@ -1,9 +1,9 @@
 package lk.easycarrent.spring.entity;
 
-import lk.easycarrent.spring.dto.CarType;
-import lk.easycarrent.spring.dto.Color;
-import lk.easycarrent.spring.dto.FuelType;
-import lk.easycarrent.spring.dto.TransmissionType;
+import lk.easycarrent.spring.enums.CarType;
+import lk.easycarrent.spring.enums.Color;
+import lk.easycarrent.spring.enums.FuelType;
+import lk.easycarrent.spring.enums.TransmissionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,6 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
