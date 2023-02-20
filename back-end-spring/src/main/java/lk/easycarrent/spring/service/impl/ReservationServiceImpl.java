@@ -37,4 +37,9 @@ public class ReservationServiceImpl implements ReservationService {
     public void saveReservation(ReservationDTO dto) {
         repo.save(mapper.map(dto, Reservation.class));
     }
+
+    @Override
+    public void deleteReservation(String id) {
+        repo.deleteById(Long.valueOf(id));
+    }
 }

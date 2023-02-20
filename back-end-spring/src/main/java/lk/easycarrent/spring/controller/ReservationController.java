@@ -29,4 +29,10 @@ public class ReservationController {
         service.saveReservation(dto);
         return new ResponseUtil("200","Reservation "+dto.getId()+" saved",dto);
     }
+
+    @DeleteMapping(params = "id")
+    public ResponseUtil deleteReservation(String id){
+        service.deleteReservation(id);
+        return new ResponseUtil("200","Reservation "+id+" deleted", id);
+    }
 }
