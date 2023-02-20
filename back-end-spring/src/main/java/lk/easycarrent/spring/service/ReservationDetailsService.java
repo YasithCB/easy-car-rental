@@ -14,4 +14,7 @@ public interface ReservationDetailsService {
     ArrayList<ReservationDetailsDTO> getAllReservationDetails();
 
     void saveReservationDetails(ReservationDetailsDTO dto);
+
+    void deleteReservationDetails(String id);
+
 }

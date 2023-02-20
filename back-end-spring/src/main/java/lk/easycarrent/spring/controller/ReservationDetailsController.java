@@ -30,4 +30,12 @@ public class ReservationDetailsController {
         service.saveReservationDetails(dto);
         return new ResponseUtil("200","saved",dto);
     }
+
+    @DeleteMapping(params = "id")
+    public ResponseUtil deleteReservationDetails(String id){
+        service.deleteReservationDetails(id);
+        return new ResponseUtil("200","deleted",id);
+    }
+
+
 }
