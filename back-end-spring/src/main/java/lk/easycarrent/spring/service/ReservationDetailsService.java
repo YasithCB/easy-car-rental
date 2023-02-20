@@ -12,4 +12,6 @@ import java.util.ArrayList;
 
 public interface ReservationDetailsService {
     ArrayList<ReservationDetailsDTO> getAllReservationDetails();
+
+    void saveReservationDetails(ReservationDetailsDTO dto);
 }
