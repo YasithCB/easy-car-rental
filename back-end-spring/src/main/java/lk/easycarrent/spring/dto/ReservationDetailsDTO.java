@@ -20,7 +20,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ReservationControllerDTO {
+public class ReservationDetailsDTO {
     private Long id;
     private LocalDate pickupDate;
     private String pickupLocation;
