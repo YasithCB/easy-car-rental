@@ -15,4 +15,6 @@ import java.util.ArrayList;
 @Transactional
 public interface PaymentService {
     ArrayList<PaymentDTO> getAllPayments();
+
+    void savePayment(PaymentDTO dto);
 }

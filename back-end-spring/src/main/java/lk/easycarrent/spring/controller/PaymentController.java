@@ -1,12 +1,10 @@
 package lk.easycarrent.spring.controller;
 
+import lk.easycarrent.spring.dto.PaymentDTO;
 import lk.easycarrent.spring.service.PaymentService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * author  Yasith C Bandara
@@ -25,5 +23,11 @@ public class PaymentController {
     @GetMapping
     public ResponseUtil getAllPayments(){
         return new ResponseUtil("200","", service.getAllPayments());
+    }
+
+    @PostMapping
+    public ResponseUtil savePayment(@ModelAttribute PaymentDTO dto){
+        service.savePayment(dto);
+        return new ResponseUtil("200","Payment details saved",dto);
     }
 }
