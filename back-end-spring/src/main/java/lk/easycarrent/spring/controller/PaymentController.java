@@ -30,4 +30,10 @@ public class PaymentController {
         service.savePayment(dto);
         return new ResponseUtil("200","Payment details saved",dto);
     }
+
+    @DeleteMapping(params = "id")
+    public ResponseUtil deletePayment(String id){
+        service.deletePayment(id);
+        return new ResponseUtil("200","payment "+id+" deleted",id);
+    }
 }

@@ -17,4 +17,6 @@ public interface PaymentService {
     ArrayList<PaymentDTO> getAllPayments();
 
     void savePayment(PaymentDTO dto);
+
+    void deletePayment(String id);
 }
