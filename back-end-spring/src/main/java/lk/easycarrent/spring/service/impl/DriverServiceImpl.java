@@ -42,4 +42,9 @@ public class DriverServiceImpl implements DriverService {
     public void deleteCustomer(String id) {
         repo.deleteById(Long.parseLong(id));
     }
+
+    @Override
+    public void updateDriver(DriverDTO dto) {
+        repo.save(mapper.map(dto, Driver.class));
+    }
 }
