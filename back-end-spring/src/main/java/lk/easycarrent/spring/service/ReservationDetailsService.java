@@ -17,4 +17,5 @@ public interface ReservationDetailsService {
 
     void deleteReservationDetails(String id);
 
+    void updateReservationDetails(ReservationDetailsDTO dto);
 }

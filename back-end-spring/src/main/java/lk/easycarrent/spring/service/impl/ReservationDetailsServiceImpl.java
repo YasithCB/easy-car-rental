@@ -43,4 +43,9 @@ public class ReservationDetailsServiceImpl implements ReservationDetailsService 
         repo.deleteById(Long.valueOf(id));
     }
 
+    @Override
+    public void updateReservationDetails(ReservationDetailsDTO dto) {
+        repo.save(mapper.map(dto, ReservationDetails.class));
+    }
+
 }

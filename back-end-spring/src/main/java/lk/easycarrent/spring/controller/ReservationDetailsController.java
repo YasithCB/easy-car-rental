@@ -37,5 +37,9 @@ public class ReservationDetailsController {
         return new ResponseUtil("200","deleted",id);
     }
 
-
+    @PutMapping
+    public ResponseUtil updateReservationDetails(@RequestBody ReservationDetailsDTO dto){
+        service.updateReservationDetails(dto);
+        return new ResponseUtil("200","updated",dto);
+    }
 }
