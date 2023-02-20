@@ -1,6 +1,7 @@
 package lk.easycarrent.spring.service.impl;
 
 import lk.easycarrent.spring.dto.ReservationDTO;
+import lk.easycarrent.spring.entity.Reservation;
 import lk.easycarrent.spring.repo.ReservationRepo;
 import lk.easycarrent.spring.service.ReservationService;
 import org.modelmapper.ModelMapper;
@@ -30,5 +31,10 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     public ArrayList<ReservationDTO> getAllReservations() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<ReservationDTO>>(){}.getType());
+    }
+
+    @Override
+    public void saveReservation(ReservationDTO dto) {
+        repo.save(mapper.map(dto, Reservation.class));
     }
 }

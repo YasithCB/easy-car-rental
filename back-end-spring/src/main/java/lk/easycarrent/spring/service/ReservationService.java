@@ -13,4 +13,6 @@ import java.util.ArrayList;
 
 public interface ReservationService {
     ArrayList<ReservationDTO> getAllReservations();
+
+    void saveReservation(ReservationDTO dto);
 }

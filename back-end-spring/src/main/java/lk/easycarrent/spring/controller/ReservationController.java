@@ -1,12 +1,10 @@
 package lk.easycarrent.spring.controller;
 
+import lk.easycarrent.spring.dto.ReservationDTO;
 import lk.easycarrent.spring.service.ReservationService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * author  Yasith C Bandara
@@ -24,5 +22,11 @@ public class ReservationController {
     @GetMapping
     public ResponseUtil getAllReservations(){
         return new ResponseUtil("200","",service.getAllReservations());
+    }
+
+    @PostMapping
+    public ResponseUtil saveReservation(@ModelAttribute ReservationDTO dto){
+        service.saveReservation(dto);
+        return new ResponseUtil("200","Reservation "+dto.getId()+" saved",dto);
     }
 }
