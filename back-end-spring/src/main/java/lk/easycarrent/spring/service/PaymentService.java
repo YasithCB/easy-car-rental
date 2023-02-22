@@ -11,8 +11,6 @@ import java.util.ArrayList;
  * project back-end-spring
  */
 
-@Service
-@Transactional
 public interface PaymentService {
     ArrayList<PaymentDTO> getAllPayments();
 

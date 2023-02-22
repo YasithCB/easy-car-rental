@@ -127,6 +127,7 @@
 </aside>
 
 <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
          navbar-scroll="true">
@@ -253,6 +254,8 @@
         </div>
     </nav>
     <!-- End Navbar -->
+
+    <!--dashboard-->
     <div class="container-fluid py-4">
         <div class="row">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -263,7 +266,7 @@
                         </div>
                         <div class="text-end pt-1">
                             <p class="text-sm mb-0 text-capitalize">Today's Money</p>
-                            <h4 class="mb-0">$53k</h4>
+                            <h4 id="lblTodayMoneyOnDashboard" class="mb-0">$53k</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
@@ -281,7 +284,7 @@
                         </div>
                         <div class="text-end pt-1">
                             <p class="text-sm mb-0 text-capitalize">Today's Users</p>
-                            <h4 class="mb-0">2,300</h4>
+                            <h4 id="lblTodayUsersOnDashboard" class="mb-0">2,300</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
@@ -298,8 +301,8 @@
                             <i class="material-icons opacity-10">person</i>
                         </div>
                         <div class="text-end pt-1">
-                            <p class="text-sm mb-0 text-capitalize">New Clients</p>
-                            <h4 class="mb-0">3,462</h4>
+                            <p class="text-sm mb-0 text-capitalize">Today Registrations</p>
+                            <h4 id="lblTodayRegistrationsOnDashboard" class="mb-0">3,462</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
@@ -328,6 +331,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- charts -->
         <div class="row mt-4">
             <div class="col-lg-4 col-md-6 mt-4 mb-4">
                 <div class="card z-index-2 ">
@@ -826,7 +831,10 @@
             </div>
         </footer>
     </div>
+    <!--dashboard-->
+
 </main>
+
 <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
         <i class="material-icons py-2">settings</i>
@@ -922,6 +930,7 @@
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/chartjs.min.js"></script>
+<script src="./assets/js/plugins/jquery-3.6.1.min.js"></script>
 <script>
     var ctx = document.getElementById("chart-bars").getContext("2d");
 

@@ -7,7 +7,9 @@ import lk.easycarrent.spring.service.PaymentService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 
 /**
@@ -16,6 +18,8 @@ import java.util.ArrayList;
  * project back-end-spring
  */
 
+@Service
+@Transactional
 public class PaymentServiceImpl implements PaymentService {
 
     @Autowired
