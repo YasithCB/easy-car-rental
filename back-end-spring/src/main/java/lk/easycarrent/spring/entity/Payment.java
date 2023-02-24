@@ -21,6 +21,7 @@ import java.time.LocalDate;
 @Entity
 public class Payment {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDate date;
     private Double value;

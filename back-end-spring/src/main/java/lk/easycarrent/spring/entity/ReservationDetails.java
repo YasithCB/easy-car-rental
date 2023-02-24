@@ -21,6 +21,7 @@ import java.time.LocalDate;
 @Entity(name = "reservation_details")
 public class ReservationDetails {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private LocalDate pickupDate;
