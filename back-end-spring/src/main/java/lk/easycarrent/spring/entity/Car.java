@@ -31,7 +31,10 @@ public class Car {
     private String regNo;
     private String brand;
     private Color color;
-    private byte[] image;
+    private byte[] imageFront;
+    private byte[] imageBack;
+    private byte[] imageSide;
+    private byte[] imageInterior;
     private Boolean isAvailable;
     private LocalDate availableDate;
     private TransmissionType transmissionType;
@@ -44,20 +47,4 @@ public class Car {
 
     @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
     private List<ReservationDetails> reservationDetailsList;
-
-    public Car(String regNo, String brand, Color color, byte[] image, Boolean isAvailable, LocalDate availableDate, TransmissionType transmissionType, FuelType fuelType, CarType carType, Double freeMileage, Double chargeForExtraKm, Double dailyRate, Double monthlyRate) {
-        this.regNo = regNo;
-        this.brand = brand;
-        this.color = color;
-        this.image = image;
-        this.isAvailable = isAvailable;
-        this.availableDate = availableDate;
-        this.transmissionType = transmissionType;
-        this.fuelType = fuelType;
-        this.carType = carType;
-        this.freeMileage = freeMileage;
-        this.chargeForExtraKm = chargeForExtraKm;
-        this.dailyRate = dailyRate;
-        this.monthlyRate = monthlyRate;
-    }
 }

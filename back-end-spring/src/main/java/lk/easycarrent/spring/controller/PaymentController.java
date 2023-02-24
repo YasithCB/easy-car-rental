@@ -4,7 +4,10 @@ import lk.easycarrent.spring.dto.PaymentDTO;
 import lk.easycarrent.spring.service.PaymentService;
 import lk.easycarrent.spring.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.awt.*;
 
 /**
  * author  Yasith C Bandara
@@ -41,5 +44,11 @@ public class PaymentController {
     public ResponseUtil updatePayment(@RequestBody PaymentDTO dto){
         service.updatePayment(dto);
         return new ResponseUtil("200", "payment "+ dto.getId()+"'s details updated",dto);
+    }
+
+    @GetMapping(path = "/todayMoney")
+    public ResponseUtil getTodayMoney(){
+        System.out.println("todayMoney");
+        return new ResponseUtil("200","",service.getTodayMoney());
     }
 }

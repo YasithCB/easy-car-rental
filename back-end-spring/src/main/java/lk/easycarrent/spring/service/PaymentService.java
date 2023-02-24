@@ -19,4 +19,6 @@ public interface PaymentService {
     void deletePayment(String id);
 
     void updatePayment(PaymentDTO dto);
+
+    Double getTodayMoney();
 }

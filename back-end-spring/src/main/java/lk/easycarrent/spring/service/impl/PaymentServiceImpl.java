@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -46,5 +48,18 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public void updatePayment(PaymentDTO dto) {
         repo.save(mapper.map(dto, Payment.class));
+    }
+
+    @Override
+    public Double getTodayMoney() {
+        List<Payment> all = repo.findAll();
+        Double todayMoney = 0.0;
+        for (Payment payment : all) {
+            if (payment.getDate().equals(LocalDate.now())){
+                todayMoney+= payment.getValue();
+            }
+        }
+
+        return todayMoney;
     }
 }
