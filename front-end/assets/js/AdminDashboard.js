@@ -21,21 +21,22 @@ $.ajax({
         $("#lblTodayUsersOnDashboard").text(todayUsersCount);
     },
     error:function (error){
-        alert(JSON.parse(error.responseText).message);
-    }
+        alert(JSON.parse(error.responseText).message);    }
+
 });
 
 $.ajax({
     url: baseURL+"user",
     dataType:"json",
     success: function (resp) {
-        let todayUsers = 0;
+        let todayRegs = 0;
         for (let user of resp.data){
-            todayMoney += payment.value;
-            console.log(payment.value);
+            if (true){
+
+            }
+            todayRegs ++;
         }
-        $("#lblTodayMoneyOnDashboard").text(todayMoney+" LKR");
-        console.log(todayMoney);
+        $("#lblTodayRegistrationsOnDashboard").text(todayRegs);
     },
     error:function (error){
         alert(JSON.parse(error.responseText).message);
