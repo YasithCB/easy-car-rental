@@ -8,6 +8,7 @@ import lombok.ToString;
 
 import javax.persistence.CascadeType;
 import javax.persistence.OneToMany;
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -32,6 +33,8 @@ public class UserDTO {
     private String drivingLicenseNo;
     private byte[] drivingLicenseImageFront;
     private byte[] drivingLicenseImageBack;
+    private LocalDate date;
+    private boolean isApproved;
 
     private List<Reservation> reservationList;
 }

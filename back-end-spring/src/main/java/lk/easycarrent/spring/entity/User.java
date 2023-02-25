@@ -37,6 +37,7 @@ public class User {
     private byte[] drivingLicenseImageFront;
     private byte[] drivingLicenseImageBack;
     private LocalDate date;
+    private boolean isApproved;
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     private List<Reservation> reservationList;
