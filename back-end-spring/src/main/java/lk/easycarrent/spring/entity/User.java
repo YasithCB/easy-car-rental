@@ -31,11 +31,11 @@ public class User {
     private String email;
     private String contact;
     private String nicNo;
-    private byte[] nicImageFront;
-    private byte[] nicImageBack;
+    private String nicImageFront;
+    private String nicImageBack;
     private String drivingLicenseNo;
-    private byte[] drivingLicenseImageFront;
-    private byte[] drivingLicenseImageBack;
+    private String drivingLicenseImageFront;
+    private String drivingLicenseImageBack;
     private LocalDate date;
     private boolean isApproved;
 

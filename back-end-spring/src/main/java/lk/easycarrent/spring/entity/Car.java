@@ -31,10 +31,10 @@ public class Car {
     private String regNo;
     private String brand;
     private Color color;
-    private byte[] imageFront;
-    private byte[] imageBack;
-    private byte[] imageSide;
-    private byte[] imageInterior;
+    private String imageFront;
+    private String imageBack;
+    private String imageSide;
+    private String imageInterior;
     private Boolean isAvailable;
     private LocalDate availableDate;
     private TransmissionType transmissionType;

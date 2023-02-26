@@ -271,36 +271,48 @@
                                             <label class="form-label" for="contact">Contact</label>
                                         </div>
 
+                                        <!-- nic no input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="number" id="nic" class="form-control form-control-lg" />
+                                            <label class="form-label" for="nic">NIC</label>
+                                        </div>
+
                                         <div class="row">
-                                            <!-- nic no input -->
+                                            <!-- nic 4to input -->
                                             <div class="col-12 col-md-6 mb-4">
+                                                <label class="form-label text-white" for="nicImageFront">NIC Front Image</label>
                                                 <div class="form-outline form-white">
-                                                    <input type="number" id="nic" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="nic">NIC</label>
+                                                    <input type="file" id="nicImageFront" class="form-control form-control-lg" />
                                                 </div>
                                             </div>
                                             <!-- nic 4to input -->
                                             <div class="col-12 col-md-6 mb-4">
+                                                <label class="form-label text-white" for="nicImageBack">NIC Back Image</label>
                                                 <div class="form-outline form-white">
-                                                    <input type="file" id="nicImage" class="form-control form-control-lg" />
-<!--                                                    <label class="form-label" for="form3Example2">Last name</label>-->
+                                                    <input type="file" id="nicImageBack" class="form-control form-control-lg" />
                                                 </div>
                                             </div>
                                         </div>
 
+                                        <!-- driving license no input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="number" id="drivingLicense" class="form-control form-control-lg" />
+                                            <label class="form-label" for="nic">NIC</label>
+                                        </div>
+
                                         <div class="row">
+                                            <!-- dl 4to input -->
                                             <div class="col-12 col-md-6 mb-4">
-                                                <!-- driving license no input -->
+                                                <label class="form-label text-white" for="drivingImageFront">DL Front Image</label>
                                                 <div class="form-outline form-white">
-                                                    <input type="number" id="drivingLicense" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="nic">Driving License</label>
+                                                    <input type="file" id="drivingImageFront" class="form-control form-control-lg" />
                                                 </div>
                                             </div>
+                                            <!-- dl 4to input -->
                                             <div class="col-12 col-md-6 mb-4">
-                                                <!-- driving license image input -->
-                                                <div class="form-outline form-white mb-4">
-                                                    <input type="file" id="drivingLicenseImage" class="form-control form-control-lg" />
-                                                    <!--<label class="form-label" for="drivingLicenseImage">DL Image</label>-->
+                                                <label class="form-label text-white" for="drivingImageBack">DL Back Image</label>
+                                                <div class="form-outline form-white">
+                                                    <input type="file" id="drivingImageBack" class="form-control form-control-lg" />
                                                 </div>
                                             </div>
                                         </div>
@@ -320,7 +332,7 @@
                                         </div>
 
                                         <!-- Submit button -->
-                                        <a href="../index.html"><button type="submit" class="btn btn-light btn-block mb-2">Register</button></a>
+                                        <button id="btnSaveUser" type="button" class="btn btn-light btn-block mb-2">Register</button>
                                         <button type="submit" class="btn btn-outline-danger btn-block mb-2">Back</button>
 
                                         <p class="openUserLog text-center text-light mb-4">Also have an account? Login</p>
@@ -417,5 +429,8 @@
 <script src="../assets/MDB/js/mdb.min.js"></script>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/loginScript.js"></script>
+
+<!--custom-->
+<script src="../../front-end/assets/js/userDataMapping.js"></script>
 </body>
 </html>
