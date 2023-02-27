@@ -1,6 +1,5 @@
 package lk.easycarrent.spring.config;
 
-import lk.easycarrent.spring.repo.CarRepo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;

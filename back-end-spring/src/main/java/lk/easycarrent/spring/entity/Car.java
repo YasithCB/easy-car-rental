@@ -44,6 +44,8 @@ public class Car {
     private Double chargeForExtraKm;
     private Double dailyRate;
     private Double monthlyRate;
+    private Integer yom;
+    private Integer kmPerLitre;
 
     @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
     private List<ReservationDetails> reservationDetailsList;
