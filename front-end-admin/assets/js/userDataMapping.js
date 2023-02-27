@@ -9,7 +9,7 @@ $.ajax({
 
         for (let user of resp.data) {
             if (user.approved === false) {
-                let row = '<tr><td><p class="text-sm text-center font-weight-bold mb-0">' + user.userName + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.contact + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.nicNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.drivingLicenseNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.email + '</p></td><td><button type="button" class="btn btn-sm btn-success">Approve</button></td></tr>';
+                let row = '<tr><td><p class="text-sm text-center font-weight-bold mb-0">' + user.userName + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.contact + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.nicNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.drivingLicenseNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.email + '</p></td><td><button type="button" class="btn btn-sm btn-success btnApproveUser">Approve</button></td></tr>';
                 $("#tblPendingUsers").append(row);
             } else {
                 let row = '<tr><td><p class="text-sm text-center font-weight-bold mb-0">' + user.userName + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.contact + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.nicNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.drivingLicenseNo + '</p></td><td><p class="text-sm text-center font-weight-bold mb-0">' + user.email + '</p></td></tr>';
@@ -64,8 +64,7 @@ function saveUser() {
 
 
 $("#btnSaveUser").click(function (){
-    console.log("asdas")
     saveUser();
-    console.log("asdas")
-
 })
+
+$("#btn")

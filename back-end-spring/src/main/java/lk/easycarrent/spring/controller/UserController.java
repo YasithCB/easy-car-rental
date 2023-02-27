@@ -57,7 +57,7 @@ public class UserController {
         userDTO.setNicImageBack("uploads/" + userDTO.getNicImageBack());
 
         service.saveUser(userDTO);
-        return new ResponseUtil("200","Customer Saved",userDTO);
+        return new ResponseUtil("200","User Saved",userDTO);
     }
 
     @DeleteMapping(params = "id")
