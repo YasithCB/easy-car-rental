@@ -21,6 +21,7 @@ import java.util.List;
 public class DriverDTO {
     private Long id;
     private String name;
+    private String password;
     private String contact;
     private String email;
     private String address;

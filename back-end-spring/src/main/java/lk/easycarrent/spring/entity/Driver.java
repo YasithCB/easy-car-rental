@@ -24,6 +24,7 @@ public class Driver {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String password;
     private String contact;
     private String email;
     private String address;
