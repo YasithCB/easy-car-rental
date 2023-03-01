@@ -39,6 +39,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet"/>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/">
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
@@ -258,6 +261,45 @@
     <!-- End Navbar -->
 
     <div class="container-fluid py-4">
+
+        <!--add car form-->
+        <form class="container">
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="form3Example1" class="form-control" />
+                        <label class="form-label" for="form3Example1">Register No</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="form3Example2" class="form-control" />
+                        <label class="form-label" for="form3Example2">Brand</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                <label class="form-check-label" for="form2Example33">
+                    This Car is Available Now
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="button" class="btn btn-primary btn-block mb-4">Save</button>
+
+        </form>
+
+        <!--booked cars table-->
         <div class="row">
             <div class="col-12">
                 <div class="card my-4">
@@ -305,6 +347,7 @@
             </div>
         </div>
 
+        <!--available cars table-->
         <div class="row">
             <div class="col-12">
                 <div class="card my-4">

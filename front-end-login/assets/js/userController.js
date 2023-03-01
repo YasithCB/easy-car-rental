@@ -73,16 +73,26 @@ $("#btnUserLogin").click(function () {
 
             for (let user of resp.data) {
                 if (/*user.isApproved === false &&*/ user.userName.toLowerCase() === userName) {
+                    text = "nameOk"
                     if (user.password === password) {
+                        text = "pwOk"
                         window.location = "../../../front-end-user/index.html"
+
+                        fetch("../../../front-end-user/index.html")
+                            .then(response => response.text())
+                            .then(data => {
+                                // Manipulate the DOM here
+                                document.getElementById('myElement').innerHTML = data;
+                            });
+
                     }
                 }
             }
 
-            if (text === "user0") {
-                alert("No such user found")
-            } else if (text === "pw0") {
+            if (text !== "pwOk") {
                 alert("Incorrect password!")
+            } else if (text === "nameOk") {
+                alert("No such user found")
             }
         }
     });
