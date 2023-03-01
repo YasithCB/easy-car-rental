@@ -60,6 +60,12 @@ public class UserController {
         return new ResponseUtil("200","User Saved",userDTO);
     }
 
+    @PostMapping
+    public ResponseUtil saveUser(@RequestBody UserDTO dto){
+        service.saveUser(dto);
+        return new ResponseUtil("200","User Saved",dto);
+    }
+
     @DeleteMapping(params = "id")
     public ResponseUtil deleteUser(String id){
         service.deleteUser(id);

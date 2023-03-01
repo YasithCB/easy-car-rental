@@ -5,7 +5,7 @@ $("#btnSaveDriver").click(function () {
 })
 
 function saveDriver() {
-    let user = {
+    let driver = {
         name: $("#driverNameReg").val(),
         password: $("#driverPasswordReg").val(),
         contact: $("#driverContact").val(),
@@ -17,7 +17,7 @@ function saveDriver() {
         url: baseURL + "driver",
         method: 'post',
         contentType: "application/json",
-        data: JSON.stringify(user),
+        data: JSON.stringify(driver),
         dataType: "json",
         success() {
             alert("Driver Saved");

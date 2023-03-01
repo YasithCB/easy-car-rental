@@ -24,7 +24,7 @@ $.ajax({
 
 function saveUser() {
 
-    var data = new FormData;
+    /*var data = new FormData;
 
     let nicFront = $("#nicImageFront")[0].files[0];
     let nicBack = $("#nicImageBack")[0].files[0].name;
@@ -46,18 +46,32 @@ function saveUser() {
     }
 
     data.append("file", nicFront,nicBack,dlFront,dlBack);
-    data.append("driver", new Blob([JSON.stringify(user)], {type: "application/json"}))
+    data.append("driver", new Blob([JSON.stringify(user)], {type: "application/json"}))*/
+
+    let user = {
+        userName: $("#userNameReg").val(),
+        password: $("#passwordReg").val(),
+        email: $("#email").val(),
+        contact: $("#contact").val(),
+        nicNo: $("#nic").val(),
+        nicImageFront: $("#nicImageFront").val(),
+        nicImageBack: $("#nicImageBack").val(),
+        drivingLicenseNo: $("#drivingLicense").val(),
+        drivingLicenseImageFront: $("#drivingImageFront").val(),
+        drivingLicenseImageBack: $("#drivingImageBack").val(),
+        date: "",
+        isApproved: false
+    }
 
     $.ajax({
         url: baseURL + "user",
-        method: "post",
-        async: true,
-        contentType: false,
-        processData: false,
-        data: data,
-        success: function (resp) {
-            // swal("Driver Saved", "Done", "success");
-            alert("User Saved")
+        method: 'post',
+        contentType: "application/json",
+        data: JSON.stringify(user),
+        dataType: "json",
+        success() {
+            alert("User Saved");
+            location.reload();
         }
     });
 }
@@ -67,4 +81,3 @@ $("#btnSaveUser").click(function (){
     saveUser();
 })
 
-$("#btn")

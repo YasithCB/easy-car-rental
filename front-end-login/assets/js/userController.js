@@ -1,11 +1,10 @@
-let baseURL = "http://localhost:8080/easy_car_rent/"
 
 $("#btnSaveUser").click(function () {
     saveUser()
 })
 
 function saveUser() {
-    let data = new FormData();
+    /*let data = new FormData();
 
     let nicImageFront = $("#nicImageFront")[0].files[0];
     let nicImageBack = $("#nicImageBack")[0].files[0];
@@ -32,16 +31,31 @@ function saveUser() {
     data.append("files", drivingImageFront);
     data.append("files", nicImageBack);
     data.append("user", new Blob([JSON.stringify(user)], {type: "application/json"}))
+*/
+    let user = {
+        userName: $("#userNameReg").val(),
+        password: $("#passwordReg").val(),
+        email: $("#email").val(),
+        contact: $("#contact").val(),
+        nicNo: $("#nic").val(),
+        nicImageFront: $("#nicImageFront").val(),
+        nicImageBack: $("#nicImageBack").val(),
+        drivingLicenseNo: $("#drivingLicense").val(),
+        drivingLicenseImageFront: $("#drivingImageFront").val(),
+        drivingLicenseImageBack: $("#drivingImageBack").val(),
+        date: "",
+        isApproved: false
+    }
 
     $.ajax({
-        url: baseURL + "customer",
-        method: "post",
-        async: true,
-        contentType: false,
-        processData: false,
-        data: data,
+        url: baseURL + "user",
+        method: 'post',
+        contentType: "application/json",
+        data: JSON.stringify(user),
+        dataType: "json",
         success() {
-            // window.location = "LoginPage.html"
+            alert("User Saved");
+            location.reload();
         }
     });
 }
@@ -58,23 +72,16 @@ $("#btnUserLogin").click(function () {
             let text;
 
             for (let user of resp.data) {
-                console.log(user.password , " ", password)
-
-                if (user.isApproved === false && user.userName.toLowerCase() === userName) {
-
+                if (/*user.isApproved === false &&*/ user.userName.toLowerCase() === userName) {
                     if (user.password === password) {
                         window.location = "../../../front-end-user/index.html"
-                    }else {
-                        text = "pw0";
                     }
-                }else {
-                    text = "user0"
                 }
             }
 
-            if (text === "user0"){
+            if (text === "user0") {
                 alert("No such user found")
-            }else if (text === "pw0"){
+            } else if (text === "pw0") {
                 alert("Incorrect password!")
             }
         }

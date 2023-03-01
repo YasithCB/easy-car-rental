@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@RequestMapping("reservation_controller")
+@RequestMapping("reservation_details")
 public class ReservationDetailsController {
 
     @Autowired
