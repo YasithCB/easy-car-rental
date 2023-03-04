@@ -28,7 +28,7 @@ public class CarController {
     }
 
     @PostMapping
-    public ResponseUtil saveCar(@ModelAttribute CarDTO dto){
+    public ResponseUtil saveCar(@RequestBody CarDTO dto){
         service.saveCar(dto);
         return new ResponseUtil("200","Car Saved",dto);
     }
