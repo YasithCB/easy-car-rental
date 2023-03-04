@@ -40,7 +40,6 @@ function clearFields() {
     $("#kmPerLitre").val("")
 }
 
-
 $("#btnSaveCar").click(function () {
 
     let car = {
