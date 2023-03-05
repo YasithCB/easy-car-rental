@@ -94,7 +94,7 @@
 
 
 
-  <main>
+  <main id="indexMain">
     <article>
 
       <section class="section hero" id="home">
@@ -294,11 +294,105 @@
     </article>
   </main>
 
+  <main id="reserveCarMain">
+    <!--reserve car form-->
+    <form class="container my-5">
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="regNo" type="text"/>
+            <label class="form-label" for="regNo">Register No</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="brand" type="text"/>
+            <label class="form-label" for="brand">Brand</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="color" type="text"/>
+            <label class="form-label" for="color">Color</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="carType" type="text"/>
+            <label class="form-label" for="carType">Car Type</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="transmissionType" type="text"/>
+            <label class="form-label" for="transmissionType">Transmission Type</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="fuelType" type="text"/>
+            <label class="form-label" for="fuelType">Fuel Type</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="freeMileage" type="text"/>
+            <label class="form-label" for="freeMileage">Free Mileage</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="chargeForExtraKm" type="text"/>
+            <label class="form-label" for="chargeForExtraKm">Charge for Extra Km</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="yom" type="text"/>
+            <label class="form-label" for="yom">Year Of Manufactured</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="kmPerLitre" type="text"/>
+            <label class="form-label" for="kmPerLitre">Km per Litre</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="dailyRate" type="text"/>
+            <label class="form-label" for="dailyRate">Daily Rate</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input class="form-control" id="monthlyRate" type="text"/>
+            <label class="form-label" for="monthlyRate">Monthly Rate</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check">
+        <input checked class="form-check-input bg-dark" id="form1Example3" type="checkbox" value=""/>
+        <label class="form-check-label" for="form1Example3"> This Car is Available Now </label>
+      </div>
+
+      <!-- Submit button -->
+      <button class="btn btn-dark btn-block mb-4" id="btnSaveCar" type="button">Save</button>
+
+    </form>
+  </main>
 
 
-
-
-  <!-- 
+  <!--
     - #FOOTER
   -->
 
