@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="projects structure failed and 2 files lost. project pulled from last commit">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index - title changed and blog removed">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-end-spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../front-end-user/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../front-end-user/assets/js/plugin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039578" />
@@ -79,6 +82,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -224,14 +238,7 @@
       <workItem from="1677939864267" duration="933000" />
       <workItem from="1677940922404" duration="102000" />
       <workItem from="1677947601532" duration="1609000" />
-      <workItem from="1677983520719" duration="284000" />
-    </task>
-    <task id="LOCAL-00033" summary="delete driver function added">
-      <created>1676783541153</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1676783541153</updated>
+      <workItem from="1677983520719" duration="1382000" />
     </task>
     <task id="LOCAL-00034" summary="update driver function added">
       <created>1676879477714</created>
@@ -569,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677983687963</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="front-end-user/index - title changed and blog removed">
+      <created>1677984042030</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1677984042030</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="backend - PaymentServiceImpl.java annotation missing error fixed" />
     <MESSAGE value="database - user, car entities modified" />
     <MESSAGE value="database - all entities make as auto generating - strategy=identity" />
     <MESSAGE value="ui - today registrations view customized" />
@@ -614,7 +627,8 @@
     <MESSAGE value="reserveCar.html - created a copy of car.html" />
     <MESSAGE value="reserveCar.html - added a sample form to edit" />
     <MESSAGE value="projects structure failed and 2 files lost. project pulled from last commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="projects structure failed and 2 files lost. project pulled from last commit" />
+    <MESSAGE value="front-end-user/index - title changed and blog removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index - title changed and blog removed" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
