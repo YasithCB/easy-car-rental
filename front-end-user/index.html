@@ -23,14 +23,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
+
+  <!--bootstrap-->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/MDB/css/mdb.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-  <!-- 
-    - #HEADER
-  -->
 
   <header class="header" data-header>
     <div class="container">
@@ -89,10 +90,6 @@
 
     </div>
   </header>
-
-
-
-
 
   <main id="indexMain">
     <article>
@@ -301,92 +298,39 @@
       <div class="row mb-4">
         <div class="col">
           <div class="form-outline">
-            <input class="form-control" id="regNo" type="text"/>
-            <label class="form-label" for="regNo">Register No</label>
+            <input class="form-control" id="pickupDate" type="date"/>
+            <label class="form-label" for="pickupDate">Pickup Date</label>
           </div>
         </div>
         <div class="col">
           <div class="form-outline">
-            <input class="form-control" id="brand" type="text"/>
-            <label class="form-label" for="brand">Brand</label>
+            <input class="form-control" id="pickupLocation" type="text"/>
+            <label class="form-label" for="pickupLocation">Pickup Location</label>
           </div>
         </div>
         <div class="col">
           <div class="form-outline">
-            <input class="form-control" id="color" type="text"/>
-            <label class="form-label" for="color">Color</label>
+            <input class="form-control" id="finishDate" type="date"/>
+            <label class="form-label" for="finishDate">Finish Date</label>
           </div>
         </div>
         <div class="col">
           <div class="form-outline">
-            <input class="form-control" id="carType" type="text"/>
-            <label class="form-label" for="carType">Car Type</label>
+            <input class="form-control" id="finishLocation" type="text"/>
+            <label class="form-label" for="finishLocation">Finish Location</label>
           </div>
         </div>
       </div>
 
-      <div class="row mb-4">
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="transmissionType" type="text"/>
-            <label class="form-label" for="transmissionType">Transmission Type</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="fuelType" type="text"/>
-            <label class="form-label" for="fuelType">Fuel Type</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="freeMileage" type="text"/>
-            <label class="form-label" for="freeMileage">Free Mileage</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="chargeForExtraKm" type="text"/>
-            <label class="form-label" for="chargeForExtraKm">Charge for Extra Km</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="yom" type="text"/>
-            <label class="form-label" for="yom">Year Of Manufactured</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="kmPerLitre" type="text"/>
-            <label class="form-label" for="kmPerLitre">Km per Litre</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="dailyRate" type="text"/>
-            <label class="form-label" for="dailyRate">Daily Rate</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <input class="form-control" id="monthlyRate" type="text"/>
-            <label class="form-label" for="monthlyRate">Monthly Rate</label>
-          </div>
-        </div>
-      </div>
 
       <!-- Checkbox -->
-      <div class="form-check">
-        <input checked class="form-check-input bg-dark" id="form1Example3" type="checkbox" value=""/>
-        <label class="form-check-label" for="form1Example3"> This Car is Available Now </label>
+      <div class="form-check mb-3">
+        <input checked class="form-check-input" id="form1Example3" type="checkbox" value=""/>
+        <label class="form-check-label" for="form1Example3"> I need a driver </label>
       </div>
 
       <!-- Submit button -->
-      <button class="btn btn-dark btn-block mb-4" id="btnSaveCar" type="button">Save</button>
+      <button class="btn btn-primary btn-block mb-4" id="btnSaveCar" type="button">Save</button>
 
     </form>
   </main>
@@ -567,6 +511,10 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--bootstrap-->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/MDB/js/mdb.min.js"></script>
 
 </body>
 
