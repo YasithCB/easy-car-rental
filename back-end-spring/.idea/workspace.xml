@@ -9,7 +9,104 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index - title changed and blog removed">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index - car loading area properly working now">
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/WebAppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/JPAConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/WebAppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/WebRootConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/CarController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/DriverController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/ReservationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/ReservationDetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/AdminDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/CarDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/DriverDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/PaymentDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/ReservationDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/ReservationDetailsDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/UserDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Driver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Reservation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/ReservationDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Schedule.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/CarType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/FuelType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/TransmissionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/AdminRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/CarRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/DriverRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/PaymentRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/ReservationDetailsRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/ReservationRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/UserRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/AdminService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/CarService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/DriverService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/PaymentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/ReservationDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/ReservationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/CarServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/CarServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/UserServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/util/ResponseUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.12.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.6.14.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.14.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.14.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.14.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.14.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.4.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/modelmapper-3.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.21.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/txw2-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end-user/assets/js/plugin/jquery-3.6.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-end-spring.iml" afterDir="false" />
@@ -65,11 +162,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-user\assets\js\plugin" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-user\assets\js" />
       <recent name="F:\Sample projects\front-end-user\pages" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\assets" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-login" />
-      <recent name="F:\Sample projects\front-end-user\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js" />
@@ -238,14 +335,7 @@
       <workItem from="1677939864267" duration="933000" />
       <workItem from="1677940922404" duration="102000" />
       <workItem from="1677947601532" duration="1609000" />
-      <workItem from="1677983520719" duration="1382000" />
-    </task>
-    <task id="LOCAL-00034" summary="update driver function added">
-      <created>1676879477714</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1676879477714</updated>
+      <workItem from="1677983520719" duration="2096000" />
     </task>
     <task id="LOCAL-00035" summary="paymentController class created">
       <created>1676879643889</created>
@@ -583,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677984042030</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="front-end-user/index - car loading area properly working now">
+      <created>1677985625680</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1677985625680</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +700,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="database - user, car entities modified" />
     <MESSAGE value="database - all entities make as auto generating - strategy=identity" />
     <MESSAGE value="ui - today registrations view customized" />
     <MESSAGE value="user page tables createddd" />
@@ -628,7 +724,8 @@
     <MESSAGE value="reserveCar.html - added a sample form to edit" />
     <MESSAGE value="projects structure failed and 2 files lost. project pulled from last commit" />
     <MESSAGE value="front-end-user/index - title changed and blog removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index - title changed and blog removed" />
+    <MESSAGE value="front-end-user/index - car loading area properly working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index - car loading area properly working now" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
