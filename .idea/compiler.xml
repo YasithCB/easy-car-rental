@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="back-end-spring" />
+        <module name="back-end" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="back-end-spring" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

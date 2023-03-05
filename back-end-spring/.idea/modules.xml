@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/back-end-spring.iml" filepath="$PROJECT_DIR$/back-end-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/../front-end-admin/front-end-admin.iml" filepath="$PROJECT_DIR$/../front-end-admin/front-end-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../front-end-login/front-end-login.iml" filepath="$PROJECT_DIR$/../front-end-login/front-end-login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../../../Sample projects/front-end-user/front-end-user.iml" filepath="$PROJECT_DIR$/../../../../../../Sample projects/front-end-user/front-end-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../front-end-user/front-end-user.iml" filepath="$PROJECT_DIR$/../front-end-user/front-end-user.iml" />
     </modules>
   </component>
 </project>
