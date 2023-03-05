@@ -1,0 +1,43 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+// Vendor
+@import "assets/scss/material-dashboard/bootstrap/vendor/rfs";
+
+// Deprecate
+@import "assets/scss/material-dashboard/bootstrap/mixins/deprecate";
+
+// Helpers
+@import "assets/scss/material-dashboard/bootstrap/mixins/breakpoints";
+@import "assets/scss/material-dashboard/bootstrap/mixins/color-scheme";
+@import "assets/scss/material-dashboard/bootstrap/mixins/image";
+@import "assets/scss/material-dashboard/bootstrap/mixins/resize";
+@import "assets/scss/material-dashboard/bootstrap/mixins/visually-hidden";
+@import "assets/scss/material-dashboard/bootstrap/mixins/reset-text";
+@import "assets/scss/material-dashboard/bootstrap/mixins/text-truncate";
+
+// Utilities
+@import "assets/scss/material-dashboard/bootstrap/mixins/utilities";
+
+// Components
+@import "assets/scss/material-dashboard/bootstrap/mixins/alert";
+@import "assets/scss/material-dashboard/bootstrap/mixins/backdrop";
+@import "assets/scss/material-dashboard/bootstrap/mixins/buttons";
+@import "assets/scss/material-dashboard/bootstrap/mixins/caret";
+@import "assets/scss/material-dashboard/bootstrap/mixins/pagination";
+@import "assets/scss/material-dashboard/bootstrap/mixins/lists";
+@import "assets/scss/material-dashboard/bootstrap/mixins/list-group";
+@import "assets/scss/material-dashboard/bootstrap/mixins/forms";
+@import "assets/scss/material-dashboard/bootstrap/mixins/table-variants";
+
+// Skins
+@import "assets/scss/material-dashboard/bootstrap/mixins/border-radius";
+@import "assets/scss/material-dashboard/bootstrap/mixins/box-shadow";
+@import "assets/scss/material-dashboard/bootstrap/mixins/gradients";
+@import "assets/scss/material-dashboard/bootstrap/mixins/transition";
+
+// Layout
+@import "assets/scss/material-dashboard/bootstrap/mixins/clearfix";
+@import "assets/scss/material-dashboard/bootstrap/mixins/container";
+@import "assets/scss/material-dashboard/bootstrap/mixins/grid";
