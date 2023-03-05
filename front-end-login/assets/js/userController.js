@@ -69,13 +69,13 @@ $("#btnUserLogin").click(function () {
         url: baseURL + "user",
         dataType: "json",
         success: function (resp) {
-            let text;
+            let text = "";
 
             for (let user of resp.data) {
-                if (/*user.isApproved === false &&*/ user.userName.toLowerCase() === userName) {
+                if (/*user.isApproved === true &&*/ user.userName.toLowerCase() === userName) {
                     text = "nameOk"
+                    console.log("user ok")
                     if (user.password === password) {
-                        text = "pwOk"
                         window.location = "../../../front-end-user/index.html"
 
                         fetch("../../../front-end-user/index.html")
@@ -89,10 +89,13 @@ $("#btnUserLogin").click(function () {
                 }
             }
 
-            if (text !== "pwOk") {
+            if (text === "nameOk") {
                 alert("Incorrect password!")
-            } else if (text === "nameOk") {
+                console.log("userOK")
+                text = ""
+            } else {
                 alert("No such user found")
+                text = ""
             }
         }
     });
