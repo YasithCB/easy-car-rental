@@ -77,14 +77,7 @@ $("#btnUserLogin").click(function () {
                     console.log("user ok")
                     if (user.password === password) {
                         window.location = "../../../front-end-user/index.html"
-
-                        fetch("../../../front-end-user/index.html")
-                            .then(response => response.text())
-                            .then(data => {
-                                // Manipulate the DOM here
-                                document.getElementById('myElement').innerHTML = data;
-                            });
-
+                        return
                     }
                 }
             }
