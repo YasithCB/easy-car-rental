@@ -26,7 +26,8 @@ $.ajax({
 });
 
 
-$(".rentNowOnCard").click(function (){
-    console.log("run")
-})
+$(document).on('click', '.rentNowOnCard', function () {
+    $("#reserveCarMain").css("display", "block")
+    $("#indexMain").css("display", "none")
+});
 
