@@ -40,11 +40,17 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void updateCar(CarDTO dto) {
-        repo.save(mapper.map(dto,Car.class));
+        repo.save(mapper.map(dto, Car.class));
     }
 
     @Override
     public ArrayList<CarDTO> getAllCars() {
-        return mapper.map(repo.findAll(), new TypeToken<ArrayList<CarDTO>>(){}.getType());
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<CarDTO>>() {
+        }.getType());
+    }
+
+    @Override
+    public CarDTO getCarById(Long id) {
+        return mapper.map(repo.findById(id), CarDTO.class);
     }
 }

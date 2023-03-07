@@ -25,3 +25,38 @@ function saveDriver() {
         }
     });
 }
+
+console.log("driver")
+
+$("#btnDriverLogin").click(function () {
+
+    let driverName = $("#driverName").val().toLowerCase();
+    let password = $("#driverPassword").val();
+
+    $.ajax({
+        url: baseURL + "driver",
+        dataType: "json",
+        success: function (resp) {
+            let text = "";
+            console.log(resp.data)
+
+            for (let driver of resp.data) {
+                if (/*user.isApproved === true &&*/ driver.name.toLowerCase() === driverName) {
+                    text = "nameOk"
+                    if (driver.password === password) {
+                        window.location = "../../../front-end-user/index.html"
+                        return
+                    }
+                }
+            }
+
+            if (text === "nameOk") {
+                alert("Incorrect password!")
+                text = ""
+            } else {
+                alert("No such user found")
+                text = ""
+            }
+        }
+    });
+})

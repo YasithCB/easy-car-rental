@@ -11,8 +11,6 @@ let driverRegForm = $("#driverRegForm");
 let adminRegForm = $("#adminRegForm");
 
 function setVisibleFalseAll() {
-    console.log("asas")
-
     selectForm.css('display', 'flex')
     userLogForm.css('display', 'none')
     adminLogForm.css('display', 'none')

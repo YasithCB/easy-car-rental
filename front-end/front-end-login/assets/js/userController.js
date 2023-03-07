@@ -74,7 +74,6 @@ $("#btnUserLogin").click(function () {
             for (let user of resp.data) {
                 if (/*user.isApproved === true &&*/ user.userName.toLowerCase() === userName) {
                     text = "nameOk"
-                    console.log("user ok")
                     if (user.password === password) {
                         window.location = "../../../front-end-user/index.html"
                         return
@@ -84,7 +83,6 @@ $("#btnUserLogin").click(function () {
 
             if (text === "nameOk") {
                 alert("Incorrect password!")
-                console.log("userOK")
                 text = ""
             } else {
                 alert("No such user found")

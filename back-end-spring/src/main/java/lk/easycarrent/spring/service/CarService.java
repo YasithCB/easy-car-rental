@@ -18,4 +18,6 @@ public interface CarService {
     void updateCar(CarDTO dto);
 
     ArrayList<CarDTO> getAllCars();
+
+    CarDTO getCarById(Long id);
 }

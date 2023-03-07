@@ -9,9 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-login/login.html - admin login part implementing">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-login/login.html - admin login and admin reg form done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/service/impl/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/driverController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/driverController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/loginScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/loginScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +237,7 @@
       <workItem from="1678032522697" duration="2775000" />
       <workItem from="1678094646625" duration="8331000" />
       <workItem from="1678158130361" duration="3618000" />
-      <workItem from="1678184763122" duration="1017000" />
-    </task>
-    <task id="LOCAL-00044" summary="get all reservations function added">
-      <created>1676889254435</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1676889254435</updated>
+      <workItem from="1678184763122" duration="9193000" />
     </task>
     <task id="LOCAL-00045" summary="save a reservation function added">
       <created>1676890194661</created>
@@ -575,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678185199087</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="front-end-login/login.html - admin login and admin reg form done">
+      <created>1678185940049</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1678185940049</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="admin dashboard - car and user html files theme changed as blue" />
     <MESSAGE value="admin dashboard - car and user and other html file's footer changed" />
     <MESSAGE value="save driver to db from ui completed" />
     <MESSAGE value="rentAndBookingCOntroller js file created" />
@@ -620,7 +626,8 @@
     <MESSAGE value="front-end-user/index.html - login and user navigation done" />
     <MESSAGE value="front-end-user/index.html - rent now btn working" />
     <MESSAGE value="front-end-login/login.html - admin login part implementing" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end-login/login.html - admin login part implementing" />
+    <MESSAGE value="front-end-login/login.html - admin login and admin reg form done" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end-login/login.html - admin login and admin reg form done" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
