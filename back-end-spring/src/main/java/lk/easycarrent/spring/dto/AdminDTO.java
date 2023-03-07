@@ -18,6 +18,7 @@ import lombok.ToString;
 public class AdminDTO {
     private Long id;
     private String name;
+    private String password;
     private String contact;
     private String email;
     private String address;

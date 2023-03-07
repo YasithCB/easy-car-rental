@@ -1,6 +1,8 @@
 let baseURL = "http://localhost:8080/easy_car_rent/"
 
-$("#reserveCarMain").css("display","none")
+let selectedCar;
+
+$("#reserveCarMain").css("display", "none")
 
 $.ajax({
     url: baseURL + "car",
@@ -18,6 +20,7 @@ $.ajax({
                     $("#luxuryCars").append(listItem);
                 }
             }
+            selectedCar = car
         }
     },
     error: function (error) {
@@ -27,6 +30,13 @@ $.ajax({
 
 
 $(document).on('click', '.rentNowOnCard', function () {
+    window.scrollTo(0, 0)
+
+    selectedCar = {}
+
+    let carCard = "<li><div class=\"featured-car-card\"><figure class=\"card-banner\"><img src=\"./assets/images/car-2.jpg\" alt=\"car-image\" loading=\"lazy\" width=\"440\" height=\"300\"class=\"w-100\"></figure><div class=\"card-content\"><div class=\"card-title-wrapper\"><h3 class=\"h3 card-title\"><a href=\"#\">" + selectedCar.brand + "</a></h3><data class=\"year\" value=\"2021\">" + selectedCar.yom + "</data></div><ul class=\"card-list\"><li class=\"card-list-item\"><ion-icon name=\"color-palette-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.color + "</span></li><li class=\"card-list-item\"><ion-icon name=\"flash-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.fuelType + "</span></li><li class=\"card-list-item\"><ion-icon name=\"speedometer-outline\"></ion-icon><span class=\"card-item-text\"> " + selectedCar.kmPerLitre + "km / 1-litre</span></li><li class=\"card-list-item\"><ion-icon name=\"hardware-chip-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.transmissionType + "</span> </li> <li class=\"card-list-item\"><ion-icon name=\"cash-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.monthlyRate + "/month</span> <li class=\"card-list-item\"><ion-icon name=\"leaf-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.freeMileage + "km/free</span> <li class=\"card-list-item\"><ion-icon name=\"card-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.chargeForExtraKm + "/extra Km</span> </li></ul><div class=\"card-price-wrapper\"><p class=\"card-price\"><strong>" + selectedCar.dailyRate + " LKR" + "</strong> / day</p></div></div></div></li>"
+    $("#reserveCarCard").append(carCard);
+
     $("#reserveCarMain").css("display", "block")
     $("#indexMain").css("display", "none")
 });

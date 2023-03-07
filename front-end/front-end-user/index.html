@@ -20,9 +20,8 @@
         rel="stylesheet">
 
   <!--bootstrap-->
-  <!--<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/MDB/css/mdb.min.css" rel="stylesheet">
--->
 </head>
 
 <body>
@@ -38,7 +37,7 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a class="navbar-link" data-nav-link href="index.html">Home</a>
           </li>
 
           <li>
@@ -285,9 +284,13 @@
     </article>
   </main>
 
-  <main id="reserveCarMain">
+  <main class="my-4 container" id="reserveCarMain">
+
+    <!--card-->
+    <section class="section featured-car mb-0" id="reserveCarCard"></section>
+
     <!--reserve car form-->
-    <form class="container my-5">
+    <form class="container pb-5">
 
       <div class="row mb-4">
         <div class="col">
@@ -324,7 +327,7 @@
       </div>
 
       <!-- Submit button -->
-      <button class="btn btn-primary btn-block mb-4" id="btnSaveCar" type="button">Save</button>
+      <button class="btn btn-primary btn-block mb-4" id="btnReserveCar" type="button">Reserve This Car</button>
 
     </form>
   </main>
@@ -504,9 +507,8 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <!--bootstrap-->
-  <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/MDB/js/mdb.min.js"></script>
--->
 </body>
 
 </html>

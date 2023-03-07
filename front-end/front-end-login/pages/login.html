@@ -163,8 +163,13 @@
                                         </div>
 
                                         <!-- Submit button -->
-                                        <a href="../index.html"><button type="button" class="btn btn-light btn-block mb-2">Login</button></a>
-                                        <button type="submit" class="btn btn-outline-danger btn-block mb-2">Back</button>
+                                        <button class="btn btn-light btn-block mb-2" id="btnAdminLogin" type="button">
+                                            Login
+                                        </button>
+                                        <button type="submit" class="btn btn-outline-danger btn-block mb-2">Back
+                                        </button>
+
+                                        <p class="openAdminReg text-center text-light mb-4">New Admin? Register Now</p>
 
                                     </form>
 
@@ -428,6 +433,83 @@
                 </div>
                 <!--reg user-->
 
+                <!--reg Admin-->
+                <div class="row justify-content-center" id="adminRegForm">
+                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+                        <div class="card mask-custom">
+                            <div class="card-body p-5 text-white">
+
+                                <div class="my-4">
+
+                                    <h2 class="text-center mb-5">Admin Register Form</h2>
+
+                                    <form>
+                                        <!-- adminName input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input class="form-control form-control-lg" id="adminNameReg" type="text"/>
+                                            <label class="form-label" for="adminNameReg">Admin Name</label>
+                                        </div>
+
+                                        <!-- Admin input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input class="form-control form-control-lg" id="adminPasswordReg"
+                                                   type="password"/>
+                                            <label class="form-label" for="adminPasswordReg">Password</label>
+                                        </div>
+
+                                        <!-- email input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input class="form-control form-control-lg" id="adminEmail" type="email"/>
+                                            <label class="form-label" for="adminEmail">E-mail</label>
+                                        </div>
+
+                                        <!-- contact input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input class="form-control form-control-lg" id="adminContact"
+                                                   type="number"/>
+                                            <label class="form-label" for="adminContact">Contact</label>
+                                        </div>
+
+                                        <!-- address input -->
+                                        <div class="form-outline form-white mb-4">
+                                            <input class="form-control form-control-lg" id="adminAddress" type="text"/>
+                                            <label class="form-label" for="adminAddress">Address</label>
+                                        </div>
+
+                                        <!-- Checkbox -->
+                                        <div class="form-check d-flex justify-content-center mb-4">
+                                            <input
+                                                    checked
+                                                    class="form-check-input me-2"
+                                                    id="adminAgreeTerms"
+                                                    type="checkbox"
+                                                    value=""
+                                            />
+                                            <label class="form-check-label" for="driverAgreeTerms">
+                                                I agree terms and conditions
+                                            </label>
+                                        </div>
+
+                                        <!-- Submit button -->
+                                        <button class="btn btn-light btn-block mb-2" id="btnSaveAdmin" type="button">
+                                            Register
+                                        </button>
+                                        <button class="btn btn-outline-danger btn-block mb-2" type="submit">Back
+                                        </button>
+
+                                        <p class="openAdminLog text-center text-light mb-4">Also have an account?
+                                            Login</p>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--reg user-->
+
             </div>
         </div>
     </div>
@@ -438,9 +520,9 @@
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../assets/MDB/js/mdb.min.js"></script>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
-<script src="../assets/js/loginScript.js"></script>
 
 <!--custom-->
+<script src="../assets/js/loginScript.js"></script>
 <script src="../assets/js/driverController.js"></script>
 <script src="../assets/js/userController.js"></script>
 </body>

@@ -8,14 +8,18 @@ let selectForm = $("#selectForm");
 
 let userRegForm = $("#userRegForm");
 let driverRegForm = $("#driverRegForm");
+let adminRegForm = $("#adminRegForm");
 
 function setVisibleFalseAll() {
-    selectForm.css('display','flex')
-    userLogForm.css('display','none')
-    adminLogForm.css('display','none')
-    driverLogForm.css('display','none')
-    userRegForm.css('display','none')
-    driverRegForm.css('display','none')
+    console.log("asas")
+
+    selectForm.css('display', 'flex')
+    userLogForm.css('display', 'none')
+    adminLogForm.css('display', 'none')
+    driverLogForm.css('display', 'none')
+    userRegForm.css('display', 'none')
+    driverRegForm.css('display', 'none')
+    adminRegForm.css('display', 'none')
 }
 
 setVisibleFalseAll();
@@ -42,13 +46,23 @@ $(".openDriverLog").click(function (){
 $("#openUserReg").click(function (){
     loginFormStatus = "user_reg";
 
-    userLogForm.css('display','none')
-    userRegForm.css('display','flex')
+    userLogForm.css('display', 'none')
+    userRegForm.css('display', 'flex')
 });
 
-$(".openDriverReg").click(function (){
+$(".openDriverReg").click(function () {
     loginFormStatus = "driver_reg";
 
-    driverLogForm.css('display','none')
-    driverRegForm.css('display','flex')
+    driverLogForm.css('display', 'none')
+    driverRegForm.css('display', 'flex')
 });
+
+$(".openAdminReg").click(function () {
+    loginFormStatus = "admin_reg";
+
+    driverLogForm.css('display', 'none')
+    driverRegForm.css('display', 'none')
+    adminRegForm
+        .css('display', 'flex')
+});
+

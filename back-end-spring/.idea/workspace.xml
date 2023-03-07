@@ -9,9 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index.html - login and user navigation done">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index.html - rent now btn working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/dto/AdminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/dto/AdminDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/loginScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/loginScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/pages/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,17 +86,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -239,14 +233,8 @@
       <workItem from="1677947601532" duration="1609000" />
       <workItem from="1677983520719" duration="12694000" />
       <workItem from="1678032522697" duration="2775000" />
-      <workItem from="1678094646625" duration="5160000" />
-    </task>
-    <task id="LOCAL-00042" summary="update payment function created">
-      <created>1676881570781</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1676881570781</updated>
+      <workItem from="1678094646625" duration="8331000" />
+      <workItem from="1678158130361" duration="3618000" />
     </task>
     <task id="LOCAL-00043" summary="enum directory created and Reservation dto, service and repo classes created">
       <created>1676888720377</created>
@@ -584,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678096771780</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="front-end-user/index.html - rent now btn working">
+      <created>1678105727159</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1678105727159</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="save user part tried and codes added" />
     <MESSAGE value="admin dashboard - aside bar properly nevigated" />
     <MESSAGE value="admin dashboard - car and user html files theme changed as blue" />
     <MESSAGE value="admin dashboard - car and user and other html file's footer changed" />
@@ -629,7 +623,8 @@
     <MESSAGE value="project structure changed" />
     <MESSAGE value="front-end-user - index bootstrap unlinked" />
     <MESSAGE value="front-end-user/index.html - login and user navigation done" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index.html - login and user navigation done" />
+    <MESSAGE value="front-end-user/index.html - rent now btn working" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index.html - rent now btn working" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
