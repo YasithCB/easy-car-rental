@@ -34,16 +34,28 @@ $(".openUserLog").click(function (){
     selectForm.css('display','none')
 });
 
-$(".openDriverLog").click(function (){
+$(".openDriverLog").click(function () {
     loginFormStatus = "driver_login";
 
-    userLogForm.css('display','none')
-    driverLogForm.css('display','flex')
-    driverRegForm.css('display','none')
-    selectForm.css('display','none')
+    userLogForm.css('display', 'none')
+    driverLogForm.css('display', 'flex')
+    driverRegForm.css('display', 'none')
+    selectForm.css('display', 'none')
 });
 
-$("#openUserReg").click(function (){
+$(".openAdminLog").click(function () {
+    loginFormStatus = "admin_login";
+
+    userLogForm.css('display', 'none')
+    driverLogForm.css('display', 'none')
+    driverRegForm.css('display', 'none')
+    adminLogForm.css('display', 'flex')
+    adminRegForm.css('display', 'none')
+    selectForm.css('display', 'none')
+});
+
+
+$("#openUserReg").click(function () {
     loginFormStatus = "user_reg";
 
     userLogForm.css('display', 'none')
@@ -60,9 +72,7 @@ $(".openDriverReg").click(function () {
 $(".openAdminReg").click(function () {
     loginFormStatus = "admin_reg";
 
-    driverLogForm.css('display', 'none')
-    driverRegForm.css('display', 'none')
-    adminRegForm
-        .css('display', 'flex')
+    adminLogForm.css('display', 'none')
+    adminRegForm.css('display', 'flex')
 });
 
