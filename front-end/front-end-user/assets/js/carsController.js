@@ -52,6 +52,3 @@ function rentNowClick(carId) {
     $("#indexMain").css("display", "none")
 }
 
-function getCarById(carId) {
-
-}
