@@ -7,6 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easy Car Rent</title>
 
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" rel="stylesheet"
+        type="text/css"/>
+  <!-- Nucleo Icons -->
+  <link href="../front-end-admin/assets/css/nucleo-icons.css" rel="stylesheet"/>
+  <link href="../front-end-admin/assets/css/nucleo-svg.css" rel="stylesheet"/>
+  <!-- Font Awesome Icons -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/42d5adcbca.js"></script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../front-end-admin/assets/css/material-dashboard.css?v=3.0.0" id="pagestyle" rel="stylesheet"/>
+
+
   <!--- favicon-->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
@@ -91,10 +110,10 @@
         <div class="container">
 
           <div class="hero-content">
-            <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
+            <h2 class="h1 hero-title">The easy way to takeover a car</h2>
 
             <p class="hero-text">
-              Live in New York, New Jerset and Connecticut!
+              Live in Sri Lanka!
             </p>
           </div>
 
@@ -121,7 +140,7 @@
               <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
             </div>
 
-            <button type="submit" class="btn">Search</button>
+            <button class="btn btn-primary" type="submit">Search</button>
 
           </form>
 
@@ -292,7 +311,7 @@
     <!--reserve car form-->
     <form class="container pb-5">
 
-      <div class="row mb-4">
+      <div class="row mb-5">
         <div class="col">
           <div class="form-outline">
             <input class="form-control" id="pickupDate" type="date"/>
@@ -320,16 +339,65 @@
       </div>
 
 
-      <!-- Checkbox -->
-      <div class="form-check mb-3">
-        <input checked class="form-check-input" id="form1Example3" type="checkbox" value=""/>
-        <label class="form-check-label" for="form1Example3"> I need a driver </label>
+      <div class="row my-4">
+
+        <!--card area-->
+        <div class="col-xl-6 mb-xl-0 mb-4">
+          <div class="card bg-gradient-dark shadow-xl">
+            <div class="overflow-hidden position-relative border-radius-xl">
+              <img alt="pattern-tree"
+                   class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100"
+                   src="../front-end-admin/assets/img/illustrations/pattern-tree.svg">
+              <span class="mask bg-gradient-dark opacity-10"></span>
+
+              <div class="card-body position-relative z-index-1 p-3">
+                <i class="material-icons text-white p-2">wifi</i>
+                <h5 class="text-white mt-4 mb-5 pb-2">160-2001-2545-2354</h5>
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <div class="me-4">
+                      <p class="text-white text-sm opacity-8 mb-0">Account Holder</p>
+                      <h6 class="text-white mb-0">Easy Car Rent</h6>
+                    </div>
+                    <div>
+                      <p class="text-white text-sm opacity-8 mb-0">Branch</p>
+                      <h6 class="text-white mb-0">Nugegoda</h6>
+                    </div>
+                  </div>
+                  <div class="ms-auto w-20 d-flex align-items-end justify-content-end">
+                    <img alt="logo" class="w-60 mt-2" src="../front-end-admin/assets/img/logos/mastercard.png">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--card area-->
+
+        <div class="col">
+          <label class="form-label ps-1">Upload the slip</label>
+          <div class="form-outline">
+            <input class="form-control" id="lossDamageSlip" type="file"/>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check mb-3">
+            <input checked class="form-check-input bg-primary" id="form1Example3" type="checkbox" value=""/>
+            <label class="form-check-label" for="form1Example3"> I need a driver </label>
+          </div>
+
+          <!-- Submit button -->
+          <button class="btn btn-primary btn-block mb-4" id="btnReserveCar" type="button">Reserve This Car</button>
+
+        </div>
+
+
       </div>
 
-      <!-- Submit button -->
-      <button class="btn btn-primary btn-block mb-4" id="btnReserveCar" type="button">Reserve This Car</button>
 
     </form>
+
   </main>
 
 
@@ -343,7 +411,7 @@
           <h2>Easy Car Rental</h2>
 
           <p class="footer-text">
-            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            Search for cheap rental cars in Sri Lanka. With a diverse fleet of 500+ vehicles, Waydex offers its
             consumers an
             attractive and fun selection.
           </p>

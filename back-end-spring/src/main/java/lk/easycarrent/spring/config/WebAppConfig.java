@@ -1,6 +1,5 @@
 package lk.easycarrent.spring.config;
 
-import lk.easycarrent.spring.controller.CarController;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

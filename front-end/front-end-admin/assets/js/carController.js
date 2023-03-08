@@ -29,7 +29,7 @@ function clearFields() {
     $("#imageBack").val("")
     $("#imageSide").val("")
     $("#imageInterior").val("")
-    $("#transmissionType").val("")
+    $("#transm  issionType").val("")
     $("#fuelType").val("")
     $("#carType").val("")
     $("#freeMileage").val("")
