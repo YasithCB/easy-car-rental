@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index.html - card title font size decreased">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-user/index.html - navbar content updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/userController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,13 +90,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,14 +254,8 @@
       <workItem from="1678158130361" duration="3618000" />
       <workItem from="1678184763122" duration="20509000" />
       <workItem from="1678244865916" duration="14999000" />
-      <workItem from="1678285710985" duration="7724000" />
-    </task>
-    <task id="LOCAL-00050" summary="save a reservation detail function added">
-      <created>1676897176254</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1676897176254</updated>
+      <workItem from="1678285710985" duration="9383000" />
+      <workItem from="1678361396788" duration="775000" />
     </task>
     <task id="LOCAL-00051" summary="delete a reservation detail function added">
       <created>1676897417300</created>
@@ -595,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678293848162</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="front-end-user/index.html - navbar content updated">
+      <created>1678294057228</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1678294057228</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +620,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add cars form input fields added" />
     <MESSAGE value="cars.html bootstrap linked" />
     <MESSAGE value="cars.html - add car form file input's labels edited" />
     <MESSAGE value="cars.html - add car form checkbox changed" />
@@ -640,7 +644,8 @@
     <MESSAGE value="front-end-user/index.html - reserve car btn click event added" />
     <MESSAGE value="front-end-user/index.html - tried to save a reservation" />
     <MESSAGE value="front-end-user/index.html - card title font size decreased" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index.html - card title font size decreased" />
+    <MESSAGE value="front-end-user/index.html - navbar content updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end-user/index.html - navbar content updated" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -91,3 +91,8 @@ $("#btnUserLogin").click(function () {
         }
     });
 })
+
+$("#btnAdminLogin").click(function () {
+    console.log("run")
+    window.location = "../../../front-end-admin/pages/dashboard.html"
+})
