@@ -1,4 +1,4 @@
-$("#btnReserveCar").click(function () {
+$("#btnAddCarToCart").click(function () {
 
 
     let reservationDetail = {

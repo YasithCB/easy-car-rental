@@ -9,329 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end-admin - admin log btn linked to admin dashboard">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front end - common assets separated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/WebAppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/JPAConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/WebAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/config/WebRootConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/DriverController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/PaymentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/ReservationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/ReservationDetailsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/AdminDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/CarDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/DriverDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/PaymentDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/ReservationDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/ReservationDetailsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Payment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/ReservationDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/CarType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/FuelType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/enums/TransmissionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/AdminRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/CarRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/DriverRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/PaymentRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/ReservationDetailsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/ReservationRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/repo/UserRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/DriverService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/PaymentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/ReservationDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/ReservationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/CarServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/UserServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/util/ResponseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.12.18.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.6.14.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.14.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.4.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/modelmapper-3.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-j-8.0.32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.21.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/WebAppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/config/JPAConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/config/WebAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/config/WebRootConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/DriverController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/PaymentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/ReservationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/ReservationDetailsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/AdminDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/CarDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/DriverDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/PaymentDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/ReservationDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/ReservationDetailsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Payment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/ReservationDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/enums/CarType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/enums/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/enums/FuelType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/enums/TransmissionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/AdminRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/CarRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/DriverRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/PaymentRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/ReservationDetailsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/ReservationRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/repo/UserRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/DriverService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/PaymentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/ReservationDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/ReservationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/CarServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/DriverServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/PaymentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/ReservationDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/ReservationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/UserServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/util/ResponseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.dark.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.dark.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.dark.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.dark.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/css/mdb.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/js/mdb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/MDB/js/mdb.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/docs/documentation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.dark.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.dark.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.dark.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.dark.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/css/mdb.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/js/mdb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/MDB/js/mdb.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/pages/adminDashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/pages/cars.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/pages/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.dark.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.dark.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.dark.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.dark.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/css/mdb.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/js/mdb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/MDB/js/mdb.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/Chart.extension.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/chartjs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/assets/js/plugins/jquery-3.6.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/smooth-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/pages/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-admin/pages/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/plugin/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,24 +84,35 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\front-end-login" />
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-login" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-user" />
-      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-user\assets" />
-      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-user\assets\js\plugin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js\plugins" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-admin" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\pages" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end" />
-      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\images\carousel" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lk.easycarrent.spring.util" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -563,20 +267,7 @@
       <workItem from="1678285710985" duration="9383000" />
       <workItem from="1678361396788" duration="1556000" />
       <workItem from="1678421837554" duration="771000" />
-    </task>
-    <task id="LOCAL-00052" summary="update a reservation detail function added">
-      <created>1676897508980</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1676897508980</updated>
-    </task>
-    <task id="LOCAL-00053" summary="admin-dashboard template added as a new module">
-      <created>1676906681219</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1676906681219</updated>
+      <workItem from="1678455523639" duration="4893000" />
     </task>
     <task id="LOCAL-00054" summary="admin-dashboard template's unversioned files added">
       <created>1676907575944</created>
@@ -907,7 +598,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678362258509</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="front end - common assets separated">
+      <created>1678455866952</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1678455866952</updated>
+    </task>
+    <task id="LOCAL-00102" summary="front end - common assets separated">
+      <created>1678455974864</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1678455974864</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -927,7 +632,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="cars.html - add car form file input's labels edited" />
     <MESSAGE value="cars.html - add car form checkbox changed" />
     <MESSAGE value="cars.html - add car form clear field function added" />
     <MESSAGE value="reserveCar.html - created a copy of car.html" />
@@ -952,7 +656,8 @@
     <MESSAGE value="front-end-user/index.html - card title font size decreased" />
     <MESSAGE value="front-end-user/index.html - navbar content updated" />
     <MESSAGE value="front-end-admin - admin log btn linked to admin dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end-admin - admin log btn linked to admin dashboard" />
+    <MESSAGE value="front end - common assets separated" />
+    <option name="LAST_COMMIT_MESSAGE" value="front end - common assets separated" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
