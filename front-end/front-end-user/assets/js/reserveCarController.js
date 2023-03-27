@@ -1,6 +1,5 @@
 $("#btnAddCarToCart").click(function () {
 
-
     let reservationDetail = {
         pickupDate: $("#pickupDate").val(),
         pickupLocation: $("#pickupLocation").val(),

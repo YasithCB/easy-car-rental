@@ -1,17 +1,15 @@
 package lk.easycarrent.spring.entity;
 
-import lk.easycarrent.spring.enums.CarType;
-import lk.easycarrent.spring.enums.Color;
-import lk.easycarrent.spring.enums.FuelType;
-import lk.easycarrent.spring.enums.TransmissionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -46,7 +44,4 @@ public class Car {
     private Double monthlyRate;
     private Integer yom;
     private Integer kmPerLitre;
-
-    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
-    private List<ReservationDetails> reservationDetailsList;
 }

@@ -75,7 +75,7 @@ $("#btnUserLogin").click(function () {
                 if (/*user.isApproved === true &&*/ user.userName.toLowerCase() === userName) {
                     text = "nameOk"
                     if (user.password === password) {
-                        window.location = "../../../front-end-user/index.html"
+                        window.location = "../front-end-user/index.html"
                         return
                     }
                 }

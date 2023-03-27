@@ -9,15 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="back-end/ entities updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/ReservationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/ReservationDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/assets/js/plugins/jquery-3.6.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/ReservationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/ReservationDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/Schedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-spring-1.0-SNAPSHOT/WEB-INF/classes/lk/easycarrent/spring/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/ReservationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/ReservationDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/Schedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/easycarrent/spring/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/pages/sign-in.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/pages/sign-up.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/userController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +46,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,11 +100,11 @@
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\front-end-login" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js\plugins" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-admin" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\pages" />
-      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lk.easycarrent.spring.util" />
@@ -263,14 +279,7 @@
       <workItem from="1678361396788" duration="1556000" />
       <workItem from="1678421837554" duration="771000" />
       <workItem from="1678455523639" duration="8194000" />
-      <workItem from="1679915149072" duration="1291000" />
-    </task>
-    <task id="LOCAL-00055" summary="aside bar customized">
-      <created>1677085851437</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1677085851437</updated>
+      <workItem from="1679915149072" duration="8523000" />
     </task>
     <task id="LOCAL-00056" summary="backend - PaymentServiceImpl.java annotation missing error fixed">
       <created>1677087658681</created>
@@ -608,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678462319809</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="back-end/ entities updated">
+      <created>1679916523028</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1679916523029</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="cars.html - add car form clear field function added" />
     <MESSAGE value="reserveCar.html - created a copy of car.html" />
     <MESSAGE value="reserveCar.html - added a sample form to edit" />
     <MESSAGE value="projects structure failed and 2 files lost. project pulled from last commit" />
@@ -653,7 +668,8 @@
     <MESSAGE value="front-end-admin - admin log btn linked to admin dashboard" />
     <MESSAGE value="front end - common assets separated" />
     <MESSAGE value="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart" />
+    <MESSAGE value="back-end/ entities updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="back-end/ entities updated" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

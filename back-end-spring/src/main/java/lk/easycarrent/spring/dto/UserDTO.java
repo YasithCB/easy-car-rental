@@ -1,15 +1,11 @@
 package lk.easycarrent.spring.dto;
 
-import lk.easycarrent.spring.entity.Reservation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.CascadeType;
-import javax.persistence.OneToMany;
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -35,6 +31,4 @@ public class UserDTO {
     private String drivingLicenseImageBack;
     private LocalDate date;
     private boolean isApproved;
-
-    private List<Reservation> reservationList;
 }
