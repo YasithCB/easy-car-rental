@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -19,26 +21,32 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @ToString
 @Entity(name = "reservation_details")
+@IdClass(ReservationDetailsKey.class)
 public class ReservationDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long reserveId;
+    @Id
+    private Long carId;
+    @Id
+    private Long driverId;
 
     private LocalDate pickupDate;
     private String pickupLocation;
     private LocalDate finishDate;
     private String finishLocation;
+    private Double lossDamagePayment;
 
     @ManyToOne
-    @JoinColumn(name = "reservationId", referencedColumnName = "id")
+    @JoinColumn(name = "reservationId", referencedColumnName = "id", updatable = false, insertable = false)
     private Reservation reservation;
 
     @ManyToOne
-    @JoinColumn(name = "carId", referencedColumnName = "id")
+    @JoinColumn(name = "carId", referencedColumnName = "id", updatable = false, insertable = false)
     private Car car;
 
     @ManyToOne
-    @JoinColumn(name = "driverId", referencedColumnName = "id")
+    @NotFound(action = NotFoundAction.IGNORE)
+    @JoinColumn(name = "driverId", referencedColumnName = "id", insertable = false, updatable = false, nullable = true)
     private Driver driver;
 
 }

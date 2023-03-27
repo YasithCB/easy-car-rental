@@ -5,10 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
@@ -28,4 +25,7 @@ public class Schedule {
     private Long id;
     private LocalDate pickupDate;
     private LocalDate finishDate;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ReservationDetails reservationDetails;
 }

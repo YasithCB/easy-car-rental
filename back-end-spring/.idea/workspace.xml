@@ -9,22 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front end - common assets separated">
+    <list default="true" id="6385459d-c48e-48d6-89d7-c450b471dd35" name="Default Changelist" comment="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/Chart.extension.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/bootstrap-notify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/chartjs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/assets/js/plugins/jquery-3.6.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/smooth-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/assets/js/plugins/world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-admin/pages/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-admin/pages/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/ReservationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/ReservationDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easycarrent/spring/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/assets/js/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/assets/js/plugins/jquery-3.6.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/front-end-login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/carsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/plugin/jquery-3.6.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/assets/js/reserveCarController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/front-end-user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/front-end-user/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +29,9 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../front-end/front-end-login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../front-end/front-end-login/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039578" />
@@ -84,11 +77,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\front-end-login\assets\images" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\front-end-login" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end" />
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-login" />
-      <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end-admin\front-end-user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\IJSE\Sem 2\AAD - advanced api development\CW\easy-car-rental\front-end\assets\js\plugins" />
@@ -102,13 +95,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -267,14 +262,8 @@
       <workItem from="1678285710985" duration="9383000" />
       <workItem from="1678361396788" duration="1556000" />
       <workItem from="1678421837554" duration="771000" />
-      <workItem from="1678455523639" duration="4893000" />
-    </task>
-    <task id="LOCAL-00054" summary="admin-dashboard template's unversioned files added">
-      <created>1676907575944</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1676907575944</updated>
+      <workItem from="1678455523639" duration="8194000" />
+      <workItem from="1679915149072" duration="1291000" />
     </task>
     <task id="LOCAL-00055" summary="aside bar customized">
       <created>1677085851437</created>
@@ -612,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678455974864</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart">
+      <created>1678462319809</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1678462319809</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="cars.html - add car form checkbox changed" />
     <MESSAGE value="cars.html - add car form clear field function added" />
     <MESSAGE value="reserveCar.html - created a copy of car.html" />
     <MESSAGE value="reserveCar.html - added a sample form to edit" />
@@ -657,7 +652,8 @@
     <MESSAGE value="front-end-user/index.html - navbar content updated" />
     <MESSAGE value="front-end-admin - admin log btn linked to admin dashboard" />
     <MESSAGE value="front end - common assets separated" />
-    <option name="LAST_COMMIT_MESSAGE" value="front end - common assets separated" />
+    <MESSAGE value="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-end/user-fe - car loading area limited to 3 cars and reserve btn changed as add to cart" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

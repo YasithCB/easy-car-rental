@@ -27,14 +27,10 @@ public class Reservation {
 
     private LocalDate date;
 
-    @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "userId", referencedColumnName = "id",nullable = false)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
+    @JoinColumn(name = "userId", referencedColumnName = "id", nullable = false)
     private User user;
 
     @OneToMany(mappedBy = "reservation", cascade = CascadeType.ALL)
-    private List<Payment> paymentList;
-
-    @OneToMany(mappedBy = "reservation", cascade = CascadeType.ALL)
     private List<ReservationDetails> reservationDetailsList;
-
 }

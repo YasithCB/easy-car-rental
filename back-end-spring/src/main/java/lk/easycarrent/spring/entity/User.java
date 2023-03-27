@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import net.bytebuddy.asm.Advice;
-import sun.security.util.Password;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -38,7 +38,4 @@ public class User {
     private String drivingLicenseImageBack;
     private LocalDate date;
     private boolean isApproved;
-
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
-    private List<Reservation> reservationList;
 }
