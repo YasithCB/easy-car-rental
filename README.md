@@ -1,6 +1,6 @@
 # easy-car-rental
 
-- back-end with spring 
+- A car reservation website
 
 
 Objectives of this project
