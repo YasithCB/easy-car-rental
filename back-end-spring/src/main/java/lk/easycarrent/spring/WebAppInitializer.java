@@ -1,9 +1,8 @@
 package lk.easycarrent.spring;
 
 import lk.easycarrent.spring.config.WebAppConfig;
-import lk.easycarrent.spring.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
+import lk.easycarrent.spring.config.WebRootConfig;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
 

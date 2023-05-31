@@ -30,5 +30,5 @@ public class UserDTO {
     private String drivingLicenseImageFront;
     private String drivingLicenseImageBack;
     private LocalDate date;
-    private boolean isApproved;
+    private boolean isSelected;
 }

@@ -33,6 +33,11 @@ public class UserController {
         return new ResponseUtil("200","",service.getAllUsers());
     }
 
+    @GetMapping(path = "/byId", params = "id")
+    public ResponseUtil getUserById(Long id) {
+        return new ResponseUtil("200", "", service.getUserById(id));
+    }
+
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(path = "register", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseUtil registerUser(@RequestPart("files") MultipartFile[] file, @RequestPart("user") UserDTO userDTO) {

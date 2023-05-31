@@ -1,19 +1,9 @@
 package lk.easycarrent.spring.dto;
-
-import lk.easycarrent.spring.entity.ReservationDetails;
-import lk.easycarrent.spring.enums.CarType;
-import lk.easycarrent.spring.enums.Color;
-import lk.easycarrent.spring.enums.FuelType;
-import lk.easycarrent.spring.enums.TransmissionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
-import javax.persistence.CascadeType;
-import javax.persistence.OneToMany;
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -45,6 +35,4 @@ public class CarDTO {
     private Double monthlyRate;
     private Integer yom;
     private Integer kmPerLitre;
-
-    private List<ReservationDetails> reservationDetailsList;
 }

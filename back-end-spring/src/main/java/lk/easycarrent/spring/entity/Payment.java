@@ -25,7 +25,4 @@ public class Payment {
     private Long id;
     private LocalDate date;
     private Double value;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    private ReservationDetails reservationDetails;
 }

@@ -1,4 +1,3 @@
-let baseURL = "http://localhost:8080/easy_car_rent/"
 
 $("#btnSaveDriver").click(function () {
     saveDriver();
@@ -26,8 +25,6 @@ function saveDriver() {
     });
 }
 
-console.log("driver")
-
 $("#btnDriverLogin").click(function () {
 
     let driverName = $("#driverName").val().toLowerCase();
@@ -38,8 +35,6 @@ $("#btnDriverLogin").click(function () {
         dataType: "json",
         success: function (resp) {
             let text = "";
-            console.log(resp.data)
-
             for (let driver of resp.data) {
                 if (/*user.isApproved === true &&*/ driver.name.toLowerCase() === driverName) {
                     text = "nameOk"

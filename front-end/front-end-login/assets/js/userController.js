@@ -75,8 +75,9 @@ $("#btnUserLogin").click(function () {
                 if (/*user.isApproved === true &&*/ user.userName.toLowerCase() === userName) {
                     text = "nameOk"
                     if (user.password === password) {
-                        window.location = "../front-end-user/index.html"
-                        return
+                        turnUserActive(user.id)
+                        // window.location = "../front-end-user/index.html";
+                        return;
                     }
                 }
             }
@@ -92,7 +93,45 @@ $("#btnUserLogin").click(function () {
     });
 })
 
+function turnUserActive(id){
+    updateSelectedUser(id)
+    setTimeout(()=> {
+        selectedUser.selected = true;
+        updateUserDetails(selectedUser)
+    },500)
+
+}
+
+function updateSelectedUser(id){
+    $.ajax({
+        url: baseURL + "user/byId?id=" + id + "",
+        dataType: "json",
+        success: function (resp) {
+            selectedUser = resp.data
+        },
+        error: function (error) {
+            alert("Something went wrong");
+        }
+    });
+}
+
+function updateUserDetails(user){
+    $.ajax({
+        url: baseURL + "user",
+        type: "PUT",
+        contentType: "application/json",
+        data: JSON.stringify(user),
+        success: function(resp) {
+            // Handle the success response
+            window.location = "../../../front-end-user/index.html"
+        },
+        error: function() {
+            // Handle the error response
+            alert("Something went wrong");
+        }
+    });
+}
+
 $("#btnAdminLogin").click(function () {
-    console.log("run")
-    window.location = "../../../front-end-admin/pages/dashboard.html"
+    window.location = "../../front-end-admin/pages/dashboard.html"
 })

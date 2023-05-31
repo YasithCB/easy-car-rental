@@ -26,6 +26,4 @@ public class Schedule {
     private LocalDate pickupDate;
     private LocalDate finishDate;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private ReservationDetails reservationDetails;
 }

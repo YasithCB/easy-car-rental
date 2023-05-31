@@ -19,18 +19,23 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Entity
+@Entity(name = "reservation")
 public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Long carId;
+    private Long driverId;
 
-    private LocalDate date;
+    private LocalDate finishDate;
+    private String finishLocation;
+    private String lossDamageSlip;
 
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
-    @JoinColumn(name = "userId", referencedColumnName = "id", nullable = false)
-    private User user;
+    private LocalDate pickupDate;
+    private String pickupLocation;
+    private Long reserveId;
 
-    @OneToMany(mappedBy = "reservation", cascade = CascadeType.ALL)
-    private List<ReservationDetails> reservationDetailsList;
+    private LocalDate reserveDate;
+    private Long userId;
+    private boolean isApproved;
 }

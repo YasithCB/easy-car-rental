@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @CrossOrigin
-@RequestMapping("reservation")
+@RequestMapping("/reservation")
 public class ReservationController {
 
     @Autowired
@@ -25,9 +25,9 @@ public class ReservationController {
     }
 
     @PostMapping
-    public ResponseUtil saveReservation(@ModelAttribute ReservationDTO dto){
+    public ResponseUtil saveReservation(@RequestBody ReservationDTO dto){
         service.saveReservation(dto);
-        return new ResponseUtil("200","Reservation "+dto.getId()+" saved",dto);
+        return new ResponseUtil("200","saved",dto);
     }
 
     @DeleteMapping(params = "id")

@@ -1,6 +1,4 @@
 
-let baseURL = "http://localhost:8080/easy_car_rent/"
-
 /*dashboard 1st row*/
 
 $.ajax({

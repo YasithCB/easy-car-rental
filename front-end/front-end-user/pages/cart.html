@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Car Rent</title>
+
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" rel="stylesheet"
+        type="text/css"/>
+  <!-- Nucleo Icons -->
+  <link href="../../front-end-admin/assets/css/nucleo-icons.css" rel="stylesheet"/>
+  <link href="../../front-end-admin/assets/css/nucleo-svg.css" rel="stylesheet"/>
+  <!-- Font Awesome Icons -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/42d5adcbca.js"></script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../front-end-admin/assets/css/material-dashboard.css?v=3.0.0" id="pagestyle" rel="stylesheet"/>
+  <link href="../assets/css/custom.css" rel="stylesheet"/>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--- custom css link-->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+  <!--bootstrap-->
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/MDB/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--header-->
+<header class="header" data-header>
+  <div class="container">
+
+    <div class="overlay" data-overlay></div>
+
+    <h2>Easy Car Rental</h2>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+
+        <li>
+          <a class="navbar-link" data-nav-link href="../index.html">Home</a>
+        </li>
+
+        <li>
+          <a class="navbar-link" data-nav-link href="../index.html">Explore cars</a>
+        </li>
+
+        <li>
+          <a href="#" class="navbar-link" data-nav-link>About us</a>
+        </li>
+
+        <li>
+          <a class="navbar-link pe-5" data-nav-link href="#">Blog</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+
+      <a aria-labelledby="aria-label-txt" class="btn" href="#generalCars">
+        <ion-icon name="car-outline"></ion-icon>
+
+        <span id="aria-label-txt">Explore cars</span>
+      </a>
+
+      <a href="#" class="btn user-btn" aria-label="Profile">
+        <ion-icon name="person-outline"></ion-icon>
+      </a>
+
+      <button class="btn btn-primary d-flex gap-1" type="submit"><img class="transform-scale-8" src="../../assets/image/icon/shopping_cart.svg" alt="">Cart</button>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+    </div>
+
+  </div>
+</header>
+
+<div class="container-fluid py-5 my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card my-4">
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+          <div class="bg-gradient-info shadow-info border-radius-lg pt-4 pb-3">
+            <h6 class="text-white text-capitalize ps-3">Cart</h6>
+          </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+              <tr>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+                  Car ID
+                </th>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+                  Driver ID
+                </th>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+                  Model
+                </th>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+                  No of days
+                </th>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+                  Charge(LKR)
+                </th>
+                <th class="text-center text-uppercase text-secondary font-weight-bolder">
+
+                </th>
+              </tr>
+              </thead>
+              <tbody id="tblCart">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-end">
+    <div class="col-4">
+      <button class="btn btn-primary btn-block mb-4 pe-3" id="btnAddCarToCart" type="button">Purchase</button>
+    </div>
+  </div>
+
+</div>
+
+<!--- #FOOTER-->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <h2>Easy Car Rental</h2>
+
+        <p class="footer-text">
+          Search for cheap rental cars in Sri Lanka. With a diverse fleet of 500+ vehicles, Waydex offers its
+          consumers an
+          attractive and fun selection.
+        </p>
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Company</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Pricing plans</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Our blog</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Contacts</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Support</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Help center</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Ask a question</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy policy</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Terms & conditions</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Neighborhoods in New York</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Manhattan</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Central New York City</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Upper East Side</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Queens</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Theater District</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Midtown</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">SoHo</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Chelsea</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-skype"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        &copy; 2023 EasyCarRent. All Rights Reserved
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<!--plugin-->
+<script src="../assets/js/plugin/jquery-3.6.1.min.js"></script>
+
+<!--
+  - custom js link
+-->
+<script src="../../assets/js/mainData.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/carsController.js"></script>
+<script src="../assets/js/reserveCarController.js"></script>
+<script src="../assets/js/cartController.js"></script>
+
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--bootstrap-->
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/MDB/js/mdb.min.js"></script>
+</body>
+
+</html>

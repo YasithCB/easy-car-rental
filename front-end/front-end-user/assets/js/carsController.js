@@ -1,6 +1,5 @@
-let baseURL = "http://localhost:8080/easy_car_rent/"
 
-var selectedCar
+let selectedCar
 
 $("#reserveCarMain").css("display", "none")
 
@@ -41,33 +40,56 @@ function loadCars() {
     });
 }
 
-function rentNowClick(carId) {
-    window.scrollTo(0, 0)
-
+function updateSelectedCar(id){
     $.ajax({
-        url: baseURL + "car/byId?id=" + carId + "",
+        url: baseURL + "car/byId?id=" + id + "",
         dataType: "json",
         success: function (resp) {
             selectedCar = resp.data
+        },
+        error: function (error) {
+            alert("Something went wrong");
+        }
+    });
+}
 
-            let carCard = "<li><div class=\"featured-car-card\"><figure class=\"card-banner\"><img src=\"./assets/images/car-3.jpg\" alt=\"car-image\" loading=\"lazy\" width=\"440\" height=\"300\"class=\"w-100\"></figure><div class=\"card-content\"><div class=\"card-title-wrapper\"><h3 class=\"h3 card-title\"><a href=\"#\">" + selectedCar.brand + "</a></h3><data class=\"year\" value=\"2021\">" + selectedCar.yom + "</data></div><ul class=\"card-list\"><li class=\"card-list-item\"><ion-icon name=\"color-palette-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.color + "</span></li><li class=\"card-list-item\"><ion-icon name=\"flash-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.fuelType + "</span></li><li class=\"card-list-item\"><ion-icon name=\"speedometer-outline\"></ion-icon><span class=\"card-item-text\"> " + selectedCar.kmPerLitre + "km / 1-litre</span></li><li class=\"card-list-item\"><ion-icon name=\"hardware-chip-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.transmissionType + "</span> </li> <li class=\"card-list-item\"><ion-icon name=\"cash-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.monthlyRate + "/month</span> <li class=\"card-list-item\"><ion-icon name=\"leaf-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.freeMileage + "km/free</span> <li class=\"card-list-item\"><ion-icon name=\"card-outline\"></ion-icon><span class=\"card-item-text\">" + selectedCar.chargeForExtraKm + "/extra Km</span> </li></ul><div class=\"card-price-wrapper\"><p class=\"card-price\"><strong>" + selectedCar.dailyRate + " LKR" + "</strong> / day</p></div></div></div></li>"
+function rentNowClick(carId) {
+    /*if(!isUserLogged){
+        alert('You Must Login First')
+        window.location = "../front-end-login/login.html";
+    }else {
+        // if user logged
+        updateSelectedCar(carId);
+
+        setTimeout(()=> {
+            let carCard = `<li><div class=\"featured-car-card\"><figure class=\"card-banner\"><img src= \"${selectedCar.imageFront}\" alt=\"car-image\" loading=\"lazy\" width=\"440\" height=\"300\"class=\"w-100\"></figure><div class=\"card-content\"><div class=\"card-title-wrapper\"><h3 class=\"h3 card-title\"><a href=\"#\"> ${selectedCar.brand} </a></h3><data class=\"year\" value=\"2021\"> ${selectedCar.yom} </data></div><ul class=\"card-list\"><li class=\"card-list-item\"><ion-icon name=\"color-palette-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.color} </span></span></li><li class=\"card-list-item\"><ion-icon name=\"flash-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.fuelType} </span></li><li class=\"card-list-item\"><ion-icon name=\"speedometer-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.kmPerLitre}km / 1-litre</span></li><li class=\"card-list-item\"><ion-icon name=\"hardware-chip-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.transmissionType} </span> </li> <li class=\"card-list-item\"><ion-icon name=\"cash-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.monthlyRate}/month</span> <li class=\"card-list-item\"><ion-icon name=\"leaf-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.freeMileage}km/free</span> <li class=\"card-list-item\"><ion-icon name=\"card-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.chargeForExtraKm}/extra Km</span> </li></ul><div class=\"card-price-wrapper\"><p class=\"card-price\"><strong> ${selectedCar.dailyRate}LKR</strong> / Day</p></div></div></div></li>`
             $("#reserveCarCard").append(carCard);
 
             setLossDamageValue()
 
-        },
-        error: function (error) {
-            alert(JSON.parse(error.responseText).message);
-        }
-    });
+            $("#reserveCarMain").css("display", "block")
+            $("#indexMain").css("display", "none")
+            window.scrollTo(0, 0)
+        },200)
+    }*/
 
-    $("#reserveCarMain").css("display", "block")
-    $("#indexMain").css("display", "none")
+    // if user logged
+    updateSelectedCar(carId);
+
+    setTimeout(()=> {
+        let carCard = `<li><div class=\"featured-car-card\"><figure class=\"card-banner\"><img src= \"${selectedCar.imageFront}\" alt=\"car-image\" loading=\"lazy\" width=\"440\" height=\"300\"class=\"w-100\"></figure><div class=\"card-content\"><div class=\"card-title-wrapper\"><h3 class=\"h3 card-title\"><a href=\"#\"> ${selectedCar.brand} </a></h3><data class=\"year\" value=\"2021\"> ${selectedCar.yom} </data></div><ul class=\"card-list\"><li class=\"card-list-item\"><ion-icon name=\"color-palette-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.color} </span></span></li><li class=\"card-list-item\"><ion-icon name=\"flash-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.fuelType} </span></li><li class=\"card-list-item\"><ion-icon name=\"speedometer-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.kmPerLitre}km / 1-litre</span></li><li class=\"card-list-item\"><ion-icon name=\"hardware-chip-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.transmissionType} </span> </li> <li class=\"card-list-item\"><ion-icon name=\"cash-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.monthlyRate}/month</span> <li class=\"card-list-item\"><ion-icon name=\"leaf-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.freeMileage}km/free</span> <li class=\"card-list-item\"><ion-icon name=\"card-outline\"></ion-icon><span class=\"card-item-text\"> ${selectedCar.chargeForExtraKm}/extra Km</span> </li></ul><div class=\"card-price-wrapper\"><p class=\"card-price\"><strong> ${selectedCar.dailyRate}LKR</strong> / Day</p></div></div></div></li>`
+        $("#reserveCarCard").append(carCard);
+
+        setLossDamageValue()
+
+        $("#reserveCarMain").css("display", "block")
+        $("#indexMain").css("display", "none")
+        window.scrollTo(0, 0)
+    },500)
 }
 
 function setLossDamageValue() {
     let value = 0
-    console.log(selectedCar)
 
     if (selectedCar.carType.toLowerCase() === 'general') {
         value = 10000

@@ -1,12 +1,9 @@
 package lk.easycarrent.spring.dto;
 
-import lk.easycarrent.spring.entity.ReservationDetails;
-import lk.easycarrent.spring.entity.Schedule;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -26,6 +23,5 @@ public class DriverDTO {
     private String email;
     private String address;
 
-    private List<ReservationDetails> reservationDetailsList;
-    private Schedule schedule;
+    private Long scheduleId;
 }

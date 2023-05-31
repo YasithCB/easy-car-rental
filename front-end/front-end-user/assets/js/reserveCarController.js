@@ -1,17 +1,21 @@
-$("#btnAddCarToCart").click(function () {
+$('#btnAddCarToCart').click(function () {
+    reserveCar()
+})
 
-    let reservationDetail = {
+function reserveCar(){
+    let reservation = {
+        reserveId : "1",
+        carId : selectedCar.id.toString(),
+        driverId : "234",
         pickupDate: $("#pickupDate").val(),
         pickupLocation: $("#pickupLocation").val(),
         finishDate: $("#finishDate").val(),
-        finishLocation: $("#finishLocation").val()
+        finishLocation: $("#finishLocation").val(),
+        lossDamageSlip : $('#lossDamageSlip').val(),
+        reserveDate : new Date(),
+        userId : "1"
     }
-
-    let reservation = {
-        date: "",
-        reservationDetailsList: reservationDetail
-    }
-
+    currentReservationId = reservation.reserveId;
     $.ajax({
         url: baseURL + "reservation",
         method: 'post',
@@ -24,6 +28,4 @@ $("#btnAddCarToCart").click(function () {
             window.scrollTo(0, 0)
         }
     });
-
-
-})
+}

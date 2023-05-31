@@ -1,15 +1,10 @@
 package lk.easycarrent.spring.dto;
-
-import lk.easycarrent.spring.entity.Payment;
-import lk.easycarrent.spring.entity.ReservationDetails;
-import lk.easycarrent.spring.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * author  Yasith C Bandara
@@ -23,8 +18,18 @@ import java.util.List;
 @ToString
 public class ReservationDTO {
     private Long id;
-    private LocalDate date;
-    private User user;
-    private List<Payment> paymentList;
-    private List<ReservationDetails> reservationDetailsList;
+    private Long carId;
+    private Long driverId;
+
+    private LocalDate finishDate;
+    private String finishLocation;
+    private String lossDamageSlip;
+
+    private LocalDate pickupDate;
+    private String pickupLocation;
+    private Long reserveId;
+
+    private LocalDate reserveDate;
+    private Long userId;
+    private boolean isApproved;
 }

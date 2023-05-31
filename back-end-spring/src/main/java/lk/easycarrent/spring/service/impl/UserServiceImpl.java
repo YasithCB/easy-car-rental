@@ -1,5 +1,6 @@
 package lk.easycarrent.spring.service.impl;
 
+import lk.easycarrent.spring.dto.CarDTO;
 import lk.easycarrent.spring.dto.UserDTO;
 import lk.easycarrent.spring.entity.User;
 import lk.easycarrent.spring.repo.UserRepo;
@@ -36,6 +37,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public ArrayList<UserDTO> getAllUsers() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<UserDTO>>(){}.getType());
+    }
+
+    @Override
+    public UserDTO getUserById(Long id) {
+        return mapper.map(repo.findById(id), UserDTO.class);
     }
 
     @Override

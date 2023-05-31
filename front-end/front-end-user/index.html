@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link href="../front-end-admin/assets/css/material-dashboard.css?v=3.0.0" id="pagestyle" rel="stylesheet"/>
-
+  <link href="assets/css/custom.css" rel="stylesheet"/>
 
   <!--- favicon-->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -86,6 +86,10 @@
           <ion-icon name="person-outline"></ion-icon>
         </a>
 
+        <a href="pages/cart.html">
+          <button class="btn btn-primary d-flex gap-1" type="submit"><img class="transform-scale-8" src="../assets/image/icon/shopping_cart.svg" alt="">Cart</button>
+        </a>
+
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
           <span class="two"></span>
@@ -98,8 +102,18 @@
   </header>
 
   <main id="indexMain">
-    <article>
+    <!--call now-->
+    <aside>
+      <!--call now fixed-->
+      <div class="water-drop-anim"></div>
+      <div class="water-drop-anim2"></div>
+      <a href="tel:+94767722095">
+        <div id="call"><i class="fa-solid fa-phone"></i></div>
+      </a>
+      <!--call now fixed-->
+    </aside>
 
+    <article>
       <section class="section hero" id="home">
         <div class="container">
 
@@ -142,11 +156,7 @@
         </div>
       </section>
 
-
-      <!--
-        - Car loading area
-      -->
-
+      <!--- Car loading area-->
       <!--general cars-->
       <section class="section featured-car">
         <div class="container">
@@ -209,12 +219,7 @@
         </div>
       </section>
 
-
-
-      <!-- 
-        - #GET START
-      -->
-
+      <!--- #GET START-->
       <section class="section get-start">
         <div class="container">
 
@@ -298,6 +303,8 @@
     </article>
   </main>
 
+  <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
   <main class="my-4 container" id="reserveCarMain">
 
     <!--card-->
@@ -373,6 +380,7 @@
         <div class="col">
 
           <h5 class="my-3" id="lossDamagePaymentValue"></h5>
+          <p>Loss damage payment refers to the compensation or reimbursement provided to cover the costs incurred due to loss or damage of property or assets.</p>
 
           <label class="form-label ps-1">Upload the slip</label>
           <div class="form-outline">
@@ -380,9 +388,9 @@
           </div>
 
           <!-- Checkbox -->
-          <div class="form-check mb-3">
-            <input checked class="form-check-input bg-primary" id="form1Example3" type="checkbox" value=""/>
-            <label class="form-check-label" for="form1Example3"> I need a driver </label>
+          <div class="form-check my-3 d-flex align-items-center gap-3 ">
+            <input checked class="form-check-box" id="form1Example3" type="checkbox" value=""/>
+            <label class="form-check-label m-0" for="form1Example3"> I need a driver </label>
           </div>
 
           <!-- Submit button -->
@@ -563,11 +571,12 @@
   <!-- 
     - custom js link
   -->
+  <script src="../assets/js/mainData.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/carsController.js"></script>
   <script src="assets/js/reserveCarController.js"></script>
 
-  <!-- 
+  <!--
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
